@@ -1,0 +1,858 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="MarkDown语法总结
+标题
+引用
+多级引用
+
+
+文本
+单行文本
+多行文本
+代码块
+文字高亮
+换行
+斜体、粗体、删除线
+
+
+图片
+链接
+显示一个链接
+显示一个邮箱地址
+
+
+图片链接
+锚点
+
+
+列表
+无序列表
+多级无序列表
+有序列表
+多级有序列表
+复选框列表
+
+
+表格  
+
+标题一级标题二级标题一级标题二级标题三级标题四级标题五级标题六级标题引用
+这是一段引用这是一段引用这是一段引用  
+
+多级别">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MarkDown语法总结">
+<meta property="og:url" content="http://vhjmlw.github.io/2016/12/29/MarkDown语法总结/index.html">
+<meta property="og:site_name" content="建磊的博客">
+<meta property="og:description" content="MarkDown语法总结
+标题
+引用
+多级引用
+
+
+文本
+单行文本
+多行文本
+代码块
+文字高亮
+换行
+斜体、粗体、删除线
+
+
+图片
+链接
+显示一个链接
+显示一个邮箱地址
+
+
+图片链接
+锚点
+
+
+列表
+无序列表
+多级无序列表
+有序列表
+多级有序列表
+复选框列表
+
+
+表格  
+
+标题一级标题二级标题一级标题二级标题三级标题四级标题五级标题六级标题引用
+这是一段引用这是一段引用这是一段引用  
+
+多级别">
+<meta property="og:image" content="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif">
+<meta property="og:image" content="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif">
+<meta property="og:image" content="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif">
+<meta property="og:image" content="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif">
+<meta property="og:image" content="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif">
+<meta property="og:image" content="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif">
+<meta property="og:updated_time" content="2016-12-29T14:57:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MarkDown语法总结">
+<meta name="twitter:description" content="MarkDown语法总结
+标题
+引用
+多级引用
+
+
+文本
+单行文本
+多行文本
+代码块
+文字高亮
+换行
+斜体、粗体、删除线
+
+
+图片
+链接
+显示一个链接
+显示一个邮箱地址
+
+
+图片链接
+锚点
+
+
+列表
+无序列表
+多级无序列表
+有序列表
+多级有序列表
+复选框列表
+
+
+表格  
+
+标题一级标题二级标题一级标题二级标题三级标题四级标题五级标题六级标题引用
+这是一段引用这是一段引用这是一段引用  
+
+多级别">
+<meta name="twitter:image" content="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://vhjmlw.github.io/2016/12/29/MarkDown语法总结/"/>
+
+
+
+
+
+  <title> MarkDown语法总结 | 建磊的博客 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">建磊的博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">爱钻研，爱技术；同时爱电影，爱音乐。</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vhjmlw.github.io/2016/12/29/MarkDown语法总结/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="建磊">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="建磊的博客">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="建磊的博客" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                MarkDown语法总结
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-29T22:56:57+08:00">
+                2016-12-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="MarkDown语法总结"><a href="#MarkDown语法总结" class="headerlink" title="MarkDown语法总结"></a>MarkDown语法总结</h1><ul>
+<li><a href="#标题">标题</a></li>
+<li><a href="#引用">引用</a><ul>
+<li><a href="#多级别引用">多级引用</a></li>
+</ul>
+</li>
+<li><a href="#文本">文本</a><ul>
+<li><a href="#单行文本">单行文本</a></li>
+<li><a href="#多行文本">多行文本</a></li>
+<li><a href="#代码块">代码块</a></li>
+<li><a href="#文字高亮">文字高亮</a></li>
+<li><a href="#换行">换行</a></li>
+<li><a href="#斜体、粗体、删除线">斜体、粗体、删除线</a></li>
+</ul>
+</li>
+<li><a href="#图片">图片</a></li>
+<li><a href="#链接">链接</a><ul>
+<li><a href="#显示一个链接">显示一个链接</a></li>
+<li><a href="#显示一个邮箱地址">显示一个邮箱地址</a></li>
+</ul>
+</li>
+<li><a href="#图片链接">图片链接</a><ul>
+<li><a href="#锚点">锚点</a></li>
+</ul>
+</li>
+<li><a href="#列表">列表</a><ul>
+<li><a href="#无序列表">无序列表</a></li>
+<li><a href="#多级无序列表">多级无序列表</a></li>
+<li><a href="#有序列表">有序列表</a></li>
+<li><a href="#多级有序列表">多级有序列表</a></li>
+<li><a href="#复选框列表">复选框列表</a></li>
+</ul>
+</li>
+<li><a href="#表格">表格</a>  </li>
+</ul>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
+<p>这是一段引用<br>这是一段引用<br>这是一段引用  </p>
+</blockquote>
+<h4 id="多级别引用"><a href="#多级别引用" class="headerlink" title="多级别引用"></a>多级别引用</h4><blockquote>
+<p>一级引用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>三级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h1><h4 id="单行文本"><a href="#单行文本" class="headerlink" title="单行文本"></a>单行文本</h4><pre><code>单行文本
+</code></pre><h4 id="多行文本"><a href="#多行文本" class="headerlink" title="多行文本"></a>多行文本</h4><pre><code>多行文本
+多行文本
+多行文本
+</code></pre><h4 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">window</span>)</span>&#123;</div><div class="line">     <span class="built_in">console</span>.log(<span class="built_in">window</span>.location);</div><div class="line">&#125;)(<span class="built_in">window</span>);</div></pre></td></tr></table></figure>
+<h4 id="文字高亮"><a href="#文字高亮" class="headerlink" title="文字高亮"></a>文字高亮</h4><p><code>javascript</code> <code>java</code> <code>node</code></p>
+<h4 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h4><pre><code>直接回车不能换行，
+可以在上一行文本后面补两个空格，
+这样下一行的文本就换行了。
+或者就是在两行文本直接加一个空行。
+也能实现换行效果，不过这个行间距有点大。
+</code></pre><h4 id="斜体、粗体、删除线"><a href="#斜体、粗体、删除线" class="headerlink" title="斜体、粗体、删除线"></a>斜体、粗体、删除线</h4><p><em>斜体</em>、<em>斜体</em><br><strong>粗体</strong>、<strong>粗体</strong><br><strong><em>斜粗体</em></strong>、<strong><em>斜粗体</em></strong><br><del>删除线</del><br><del><em>斜体删除线</em></del>、<em><del>斜体删除线</del></em><br><del><strong>粗体删除线</strong></del>、<strong><del>粗体删除线</del></strong><br><del><strong><em>斜体粗体删除线</em></strong></del>、<strong><em><del>斜体粗体删除线</del></em></strong></p>
+<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p>语法一：<br><img src="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif" alt="alt，图片加载失败显示的内容" title="title 鼠标悬浮图片上的时候显示的内容"><br>语法二：<br><img src="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif" alt="alt，图片加载失败显示的内容"></p>
+<p>语法三：<br><img src="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif" alt="imageAlt"></p>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p>语法一：<br><a href="https://www.google.com" target="_blank" rel="external">谷歌</a><br>语法二：<br><a href="https://www.google.com" target="_blank" rel="external">谷歌</a></p>
+<p>语法三：<br><a href="https://www.google.com" target="_blank" rel="external">谷歌</a></p>
+<h5 id="显示一个链接"><a href="#显示一个链接" class="headerlink" title="显示一个链接"></a>显示一个链接</h5><p>语法一：<a href="https://www.google.com" target="_blank" rel="external">https://www.google.com</a><br>语法二：<a href="https://www.google.com" target="_blank" rel="external">https://www.google.com</a>  </p>
+<h5 id="显示一个邮箱地址"><a href="#显示一个邮箱地址" class="headerlink" title="显示一个邮箱地址"></a>显示一个邮箱地址</h5><p>语法一：lei1028362931@gmail.com<br>语法二：<a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#x6c;&#101;&#x69;&#x31;&#48;&#x32;&#x38;&#x33;&#x36;&#x32;&#57;&#x33;&#49;&#64;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;">&#x6c;&#101;&#x69;&#x31;&#48;&#x32;&#x38;&#x33;&#x36;&#x32;&#57;&#x33;&#49;&#64;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;</a>  </p>
+<h1 id="图片链接"><a href="#图片链接" class="headerlink" title="图片链接"></a>图片链接</h1><p><strong>外层是网址链接，里层是图片链接</strong><br><strong>网址链接里面嵌套了一个图片链接</strong><br>语法一：<br><a href="https://www.google.com" target="_blank" rel="external"><img src="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif" alt="谷歌"></a><br>语法二：<br><a href="https://www.google.com" target="_blank" rel="external"><img src="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif" alt=""></a><br>语法三：<br><a href="https://www.google.com" target="_blank" rel="external"><img src="https://www.google.co.jp/logos/doodles/2016/winter-solstice-2016-northern-hemisphere-4788310770712576-hp.gif" alt=""></a></p>
+<h5 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h5><p><strong><em>其实呢，每一个标题都是一个锚点，和HTML的锚点（#）类似</em></strong><br><strong><em>无论#后面是哪一级的标题，都可以使用，点击跳转到指定的标题位置</em></strong><br><a href="#标题">标题</a><br><a href="#二级标题">二级标题</a><br><a href="#三级标题">三级标题</a><br><a href="#图片链接">图片链接</a><br><a href="#六级标题">六级标题</a><br><a href="#文本">文本</a></p>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><h5 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h5><ul>
+<li>无需列表</li>
+<li>无序列表</li>
+<li>无需列表</li>
+</ul>
+<h5 id="多级无序列表"><a href="#多级无序列表" class="headerlink" title="多级无序列表"></a>多级无序列表</h5><ul>
+<li>一级无序列表<ul>
+<li>两级无序列表<ul>
+<li>三级无序列表<ul>
+<li>没有第四级无序列表了</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h5><ol>
+<li>封装</li>
+<li>继承</li>
+<li>多态</li>
+</ol>
+<h5 id="多级有序列表"><a href="#多级有序列表" class="headerlink" title="多级有序列表"></a>多级有序列表</h5><ol>
+<li>一级有序列表<ol>
+<li>二级有序列表<ol>
+<li>三级有序列表<ol>
+<li>没有第四级有序列表了</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h5 id="复选框列表"><a href="#复选框列表" class="headerlink" title="复选框列表"></a>复选框列表</h5><ul>
+<li>[ ] 复选框一</li>
+<li>[x] 复选框二</li>
+<li>[ ] 复选框三</li>
+<li>[x] 复选框四</li>
+</ul>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><p><strong><em>使用  ：相对于——-的位置来控制每一列的单元格的对齐方式，放在左边就是左对齐；放在右边就是右对齐；两边都放就是居中对齐。</em></strong><br><strong><em>表格单元中的内容可以和其他大多数GFM语法配合使用</em></strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">第一行第一列</th>
+<th style="text-align:center">第一行第二列</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">第二行第一列</td>
+<td style="text-align:center"><strong>第二行*</strong>第二列*</td>
+</tr>
+<tr>
+<td style="text-align:center">第三行第一列</td>
+<td style="text-align:center"><strong><em>第三行</em></strong><del>第二列</del></td>
+</tr>
+</tbody>
+</table>
+<h3 id="以上就是我的MarkDown语法总结"><a href="#以上就是我的MarkDown语法总结" class="headerlink" title="以上就是我的MarkDown语法总结"></a>以上就是我的MarkDown语法总结</h3><p><a href="#标题">回到顶部</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/29/开发环境搭建/" rel="next" title="开发环境搭建">
+                <i class="fa fa-chevron-left"></i> 开发环境搭建
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="建磊" />
+          <p class="site-author-name" itemprop="name">建磊</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MarkDown语法总结"><span class="nav-number">1.</span> <span class="nav-text">MarkDown语法总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标题"><span class="nav-number">2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number">3.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">3.1.</span> <span class="nav-text">二级标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题-1"><span class="nav-number">4.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题-1"><span class="nav-number">4.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">4.1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">4.1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">4.1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">4.1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用"><span class="nav-number">5.</span> <span class="nav-text">引用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#多级别引用"><span class="nav-number">5.0.0.1.</span> <span class="nav-text">多级别引用</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本"><span class="nav-number">6.</span> <span class="nav-text">文本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#单行文本"><span class="nav-number">6.0.0.1.</span> <span class="nav-text">单行文本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多行文本"><span class="nav-number">6.0.0.2.</span> <span class="nav-text">多行文本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码块"><span class="nav-number">6.0.0.3.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文字高亮"><span class="nav-number">6.0.0.4.</span> <span class="nav-text">文字高亮</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#换行"><span class="nav-number">6.0.0.5.</span> <span class="nav-text">换行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#斜体、粗体、删除线"><span class="nav-number">6.0.0.6.</span> <span class="nav-text">斜体、粗体、删除线</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图片"><span class="nav-number">7.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#链接"><span class="nav-number">8.</span> <span class="nav-text">链接</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#显示一个链接"><span class="nav-number">8.0.0.0.1.</span> <span class="nav-text">显示一个链接</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#显示一个邮箱地址"><span class="nav-number">8.0.0.0.2.</span> <span class="nav-text">显示一个邮箱地址</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图片链接"><span class="nav-number">9.</span> <span class="nav-text">图片链接</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#锚点"><span class="nav-number">9.0.0.0.1.</span> <span class="nav-text">锚点</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列表"><span class="nav-number">10.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#无序列表"><span class="nav-number">10.0.0.0.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多级无序列表"><span class="nav-number">10.0.0.0.2.</span> <span class="nav-text">多级无序列表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#有序列表"><span class="nav-number">10.0.0.0.3.</span> <span class="nav-text">有序列表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多级有序列表"><span class="nav-number">10.0.0.0.4.</span> <span class="nav-text">多级有序列表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#复选框列表"><span class="nav-number">10.0.0.0.5.</span> <span class="nav-text">复选框列表</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表格"><span class="nav-number">11.</span> <span class="nav-text">表格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#以上就是我的MarkDown语法总结"><span class="nav-number">11.0.1.</span> <span class="nav-text">以上就是我的MarkDown语法总结</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">建磊</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
