@@ -1,7 +1,7 @@
 ## 建磊的博客
 ####当前博客使用Hexo搭建，主题使用的apollo，简约大方
-####但是apollo主题对于GitHub Flavour MarkDown语法的支持不完善，有些语法解析错误，如：将图片链接解析为纯图片，复选框语法无法解析。
-####鉴于Hexo + GitHub Pages搭建个人博客的教程网上已经有很多了，就不再描述搭建过程
+####但是apollo主题对于GitHub Flavour MarkDown语法的支持并不完善，有些语法解析错误，如：将图片链接解析为纯图片，复选框语法无法解析。
+####鉴于Hexo + GitHub Pages搭建个人博客的教程网上已经有很多了，这里就不再描述搭建过程
 ####博客访问地址：https://vhjmlw.github.io 或 http://www.jianlei.info   
 
 ###在博客项目根目录中添加README.md文件  
@@ -26,6 +26,7 @@ hexo deploy
 > 2. hexo generate  
 > 3. 将项目根目录中的README.bak文件拷贝到public根目录中，并重命名为README.md  
 > 4. hexo deploy  
+
 3. `source deploy`部署博客  
 
    deploy文件中包含了四条指令，执行deploy文件就相当于按照先后顺序依次执行这四条指令。以后在部署博客的时候可以直接执行一条指令：`source deploy`，就相当于按照先后顺序依次执行这四条指令。  
