@@ -27,7 +27,7 @@ hexo deploy
 > 3. 将项目根目录中的README.bak文件拷贝到public根目录中，并重命名为README.md  
 > 4. hexo deploy  
 
-3. `source deploy`部署博客  
+3.`source deploy`部署博客  
 
    deploy文件中包含了四条指令，执行deploy文件就相当于按照先后顺序依次执行这四条指令。以后在部署博客的时候可以直接执行一条指令：`source deploy`，就相当于按照先后顺序依次执行这四条指令。  
 
