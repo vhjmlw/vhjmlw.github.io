@@ -8,7 +8,7 @@
 
 source目录中的内容相当于源代码文件，里面的内容都会被转换为public目录中的文件。放在source根目录中的文件`hexo generate`之后都会被转换到public根目录中，如favicon.ico、CNAME。   
 
-`hexo deploy` 时会完全拷贝 public 下的文件到 ***.deploy_git*** 下，同时删除多余的文件，所以提前将 README 放到 ***.deploy_git*** 下是不行的。而执行 `hexo generate` 时，***public*** 文件夹下的文件会被完全更新，同样会删除多余文件，所以也不能提前放在 public 下。理论上应该放在*** source*** 文件夹里，但是 .md 文件会被渲染成 html 文件，所以也不行。而在 `hexo generate` 之后将 README 拷贝到 public 下则是一个可行的方法。   
+`hexo deploy` 时会完全拷贝 public 下的文件到 ***.deploy_git*** 下，同时删除多余的文件，所以提前将 README 放到 ***.deploy_git*** 下是不行的。而执行 `hexo generate` 时，***public*** 文件夹下的文件会被完全更新，同样会删除多余文件，所以也不能提前放在 public 下。理论上应该放在***source*** 文件夹里，但是 .md 文件会被渲染成 html 文件，所以也不行。而在 `hexo generate` 之后将 README 拷贝到 public 下则是一个可行的方法。   
 
 操作步骤如下：  
 1. 在微博项目的根目录下新建一个`README.bak`文件，以备拷贝到public根目录下  
