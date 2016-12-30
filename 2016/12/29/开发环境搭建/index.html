@@ -1,75 +1,83 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="google-site-verification" content="" />
   
-  <title>开发环境搭建</title>
-  <meta name="author" content="建磊">
-   <meta name="description" content="开发环境的搭建(Mac)1.git2. brew、brew cask3. nvm、node、npm、bower4. zsh5. oh-my-zsh6. iterm27. 开发工具8. 自动化工作流程搭建(gulp + browser-sync))
-1.  gitgit是一款目前主流的分布式的版本控制">
+  <title>开发环境搭建 - 建磊的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="开发环境的搭建(Mac)1.git2. brew、brew cask3. nvm、node、npm、bower4. zsh5. oh-my-zsh6. iterm27. 开发工具8. 自动化工作流程搭建(gulp + browser-sync))
+1.  gitgit是一款目前主流的分布式的版本控制工具。  
+
+关于git的详情，可以参考官网：https://git-scm.com/ 
+关于git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开发环境搭建">
+<meta property="og:url" content="http://vhjmlw.github.io/2016/12/29/开发环境搭建/index.html">
+<meta property="og:site_name" content="建磊的博客">
+<meta property="og:description" content="开发环境的搭建(Mac)1.git2. brew、brew cask3. nvm、node、npm、bower4. zsh5. oh-my-zsh6. iterm27. 开发工具8. 自动化工作流程搭建(gulp + browser-sync))
+1.  gitgit是一款目前主流的分布式的版本控制工具。  
+
+关于git的详情，可以参考官网：https://git-scm.com/ 
+关于git">
+<meta property="og:updated_time" content="2016-12-29T07:28:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="开发环境搭建">
+<meta name="twitter:description" content="开发环境的搭建(Mac)1.git2. brew、brew cask3. nvm、node、npm、bower4. zsh5. oh-my-zsh6. iterm27. 开发工具8. 自动化工作流程搭建(gulp + browser-sync))
+1.  gitgit是一款目前主流的分布式的版本控制工具。  
+
+关于git的详情，可以参考官网：https://git-scm.com/ 
+关于git">
+  
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
   
 
-  <meta property="og:title" content="开发环境搭建"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:site_name" content="建磊的博客"/>
- <meta property="og:image" content="undefined"/>
-  
-  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
-  <link rel="alternate" href="/atom.xml" title="建磊的博客" type="application/atom+xml">
-  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/m.min.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 
 <body>
-  <div id='wx_pic' style='display:none;'><img src='/wx_share.png'/></div>
-  <div id="main">
-    <div class="behind">
-      <div class="back">
-        <a href="/" class="black-color"><i class="fa fa-times" aria-hidden="true"></i></a>
-      </div>
-      <div class="description">
-        &nbsp;爱钻研，爱技术；同时爱电影，爱音乐。
-      </div>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://vhjmlw.github.io"></form>
+        </div>
+      </nav>
     </div>
-    <div class="container">
-      
-
-  <article class="standard post">
-    <div class="title">
-      
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-开发环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 class="page-title center">
-        开发环境搭建
+    <h1 class="article-title" itemprop="name">
+      开发环境搭建
     </h1>
   
 
-
-    </div>
-    <div class="meta center">
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2016/12/29/开发环境搭建/" class="article-date">
+  <time datetime="2016-12-29T07:26:37.000Z" itemprop="datePublished">2016-12-29</time>
+</a>
       
-<time datetime="2016-12-29T07:26:37.000Z">
-  <i class="fa fa-calendar"></i>&nbsp;
-  2016-12-29
-</time>
-
-
-
-
-
-
-
-    </div>
-    <hr>
-    <div class="picture-container">
       
     </div>
-    <h2 id="开发环境的搭建-Mac"><a href="#开发环境的搭建-Mac" class="headerlink" title="开发环境的搭建(Mac)"></a>开发环境的搭建(Mac)</h2><p><a href="#1.  git">1.git</a><br><a href="#2. brew、brew cask">2. brew、brew cask</a><br><a href="#3. nvm、node、npm、bower">3. nvm、node、npm、bower</a><br><a href="#4. zsh">4. zsh</a><br><a href="#5. oh-my-zsh">5. oh-my-zsh</a><br><a href="#6. iterm2">6. iterm2</a><br><a href="#7. 开发工具">7. 开发工具</a><br><a href="#8. 自动化工作流程搭建(gulp + browser-sync">8. 自动化工作流程搭建(gulp + browser-sync)</a>)</p>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="开发环境的搭建-Mac"><a href="#开发环境的搭建-Mac" class="headerlink" title="开发环境的搭建(Mac)"></a>开发环境的搭建(Mac)</h2><p><a href="#1.  git">1.git</a><br><a href="#2. brew、brew cask">2. brew、brew cask</a><br><a href="#3. nvm、node、npm、bower">3. nvm、node、npm、bower</a><br><a href="#4. zsh">4. zsh</a><br><a href="#5. oh-my-zsh">5. oh-my-zsh</a><br><a href="#6. iterm2">6. iterm2</a><br><a href="#7. 开发工具">7. 开发工具</a><br><a href="#8. 自动化工作流程搭建(gulp + browser-sync">8. 自动化工作流程搭建(gulp + browser-sync)</a>)</p>
 <h3 id="1-git"><a href="#1-git" class="headerlink" title="1.  git"></a>1.  git</h3><p>git是一款目前主流的分布式的版本控制工具。  </p>
 <blockquote>
 <p>关于git的详情，可以参考官网：<a href="https://git-scm.com/" target="_blank" rel="external">https://git-scm.com/</a> </p>
@@ -224,81 +232,60 @@ HTML文件的压缩
 <p>自动化工作流程的复用性很高，在其他的项目下微调目录结构和文件名后可以直接使用。<br>详情可以查看自动化工作流程搭建目录</p>
 </blockquote>
 <h3 id="以上，未完待续，会不断的补充…"><a href="#以上，未完待续，会不断的补充…" class="headerlink" title="以上，未完待续，会不断的补充…"></a>以上，未完待续，会不断的补充…</h3>
-
-  </article>
-  </script>
-    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-  </script>
-  <div class="busuanzi center">
-    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
-    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
-    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+      </footer>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/12/29/MarkDown语法总结/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          MarkDown语法总结
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/12/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 
 
 
+
+
+
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 建磊&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
     </div>
   </div>
-  <footer class="page-footer"><div class="clearfix">
-</div>
-<div class="right-foot container">
-    <div class="firstrow">
-        <a href="#top" >
-        <i class="fa fa-arrow-right"></i>
-        </a>
-        © XXX 2015-2016
-    </div>
-    <div class="secondrow">
-        <a href="https://github.com/gaoryrt/hexo-theme-pln">
-        Theme Pln
-        </a>
-    </div>
-</div>
-<div class="clearfix">
-</div>
 </footer>
-  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-<script src="/js/search.js"></script>
-<script type="text/javascript">
+    
 
-// comments below to disable loading animation
-function revealOnScroll() {
-  var scrolled = $(window).scrollTop();
-  $(".excerpt, .index-title, .index-meta, p").each(function() {
-    var current = $(this),
-      height = $(window).outerHeight(),
-      offsetTop = current.offset().top;
-    (scrolled + height + 50 > offsetTop) ? current.addClass("animation"):'';
-  });
-}
-$(window).on("scroll", revealOnScroll);
-$(document).ready(revealOnScroll)
-
-// disqus scripts
+<script src="/js/jquery.min.js"></script>
 
 
-// dropdown scripts
-$(".dropdown").click(function(event) {
-  var current = $(this);
-  event.stopPropagation();
-  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
-});
-$(document).click(function(){
-    $(".dropdown-content").removeClass("open");
-})
 
-// back to top scripts
-$("a[href='#top']").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, 500);
-  return false;
-});
-
-
-var path = "/search.xml";
-searchFunc(path, 'local-search-input', 'local-search-result');
-
-</script>
-
+<script src="/js/script.js"></script>
+  </div>
 </body>
 </html>
