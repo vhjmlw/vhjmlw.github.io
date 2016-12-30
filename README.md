@@ -56,7 +56,7 @@ more下面的内容是正文
 > 所以，以后每个文章都单独设置自己的摘要。   
 > 参考链接：<https://ohmyarch.github.io/2014/12/24/Hexo主页显示摘要>    
 
-2. ​hexo-front-matter-excerpt：该插件可以简化原生的写法。只需要在文章的头部添加一个新的字段`excerpt`，直接在该字段的后面书写文章的摘要部分即可。   
+2.hexo-front-matter-excerpt：该插件可以简化原生的写法。只需要在文章的头部添加一个新的字段`excerpt`，直接在该字段的后面书写文章的摘要部分即可。   
    该插件实现的效果和原生的是一样的，同样的，如果下面的文章没有设置摘要，会继承上面的。  
    该插件支持原生的写法。   
    原生写法：
@@ -81,14 +81,16 @@ Man, I really love writing posts on my nifty blog!
 npm install --save hexo-front-matter-excerpt
 ```
 > 详情参考链接：https://www.npmjs.com/package/hexo-front-matter-excerpt   
-3. hexo-excerpt：该插件自动生成文章的摘要。效果不好，不建议使用。   
+
+3.hexo-excerpt：该插件自动生成文章的摘要。效果不好，不建议使用。   
    插件的安装：
 ```
 npm install hexo-excerpt --save
 ```
 > 详情参考链接：https://www.npmjs.com/package/hexo-excerpt   
-> https://chekun.me/post/hexo-excerpt/  
-4. 更改站点配置文件：在`_config.yml`文件中添加如下的内容，但是好像无效。    
+> https://chekun.me/post/hexo-excerpt/   
+
+4.更改站点配置文件：在`_config.yml`文件中添加如下的内容，但是好像无效。    
 ```
 # Archives #存档，这里的说明好像不对。全部选择1，这个选项与主题中的选项有时候会有冲突
 ## 2: Enable pagination
