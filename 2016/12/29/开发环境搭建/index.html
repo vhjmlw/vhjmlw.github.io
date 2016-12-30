@@ -2,67 +2,74 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
   
-  <title>开发环境搭建 | 建磊的博客</title>
+  <title>开发环境搭建</title>
   <meta name="author" content="建磊">
-  
-  <meta name="description" content="开发环境的搭建(Mac)1.git2. brew、brew cask3. nvm、node、npm、bower4. zsh5. oh-my-zsh6. iterm27. 开发工具8. 自动化工作流程搭建(gulp + browser-sync))
+   <meta name="description" content="开发环境的搭建(Mac)1.git2. brew、brew cask3. nvm、node、npm、bower4. zsh5. oh-my-zsh6. iterm27. 开发工具8. 自动化工作流程搭建(gulp + browser-sync))
 1.  gitgit是一款目前主流的分布式的版本控制">
   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:title" content="开发环境搭建"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:site_name" content="建磊的博客"/>
-
+ <meta property="og:image" content="undefined"/>
   
-    <meta property="og:image" content="undefined"/>
-  
-
-  <link href="/favicon.png" rel="icon">
+  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
   <link rel="alternate" href="/atom.xml" title="建磊的博客" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 
-
 <body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">建磊的博客</a></h1>
-  <h2><a href="/">爱钻研，爱技术；同时爱电影，爱音乐。</a></h2>
-</div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    
-      <li><a href="/">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-<div class="clearfix"></div>
-</header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
-  
-  <div class="post-content">
-    <header>
+  <div id='wx_pic' style='display:none;'><img src='/wx_share.png'/></div>
+  <div id="main">
+    <div class="behind">
+      <div class="back">
+        <a href="/" class="black-color"><i class="fa fa-times" aria-hidden="true"></i></a>
+      </div>
+      <div class="description">
+        &nbsp;爱钻研，爱技术；同时爱电影，爱音乐。
+      </div>
+    </div>
+    <div class="container">
       
-        <div class="icon"></div>
-        <time datetime="2016-12-29T07:26:37.000Z"><a href="/2016/12/29/开发环境搭建/">2016-12-29</a></time>
-      
+
+  <article class="standard post">
+    <div class="title">
       
   
-    <h1 class="title">开发环境搭建</h1>
+    <h1 class="page-title center">
+        开发环境搭建
+    </h1>
   
 
-    </header>
-    <div class="entry">
+
+    </div>
+    <div class="meta center">
       
-        <h2 id="开发环境的搭建-Mac"><a href="#开发环境的搭建-Mac" class="headerlink" title="开发环境的搭建(Mac)"></a>开发环境的搭建(Mac)</h2><p><a href="#1.  git">1.git</a><br><a href="#2. brew、brew cask">2. brew、brew cask</a><br><a href="#3. nvm、node、npm、bower">3. nvm、node、npm、bower</a><br><a href="#4. zsh">4. zsh</a><br><a href="#5. oh-my-zsh">5. oh-my-zsh</a><br><a href="#6. iterm2">6. iterm2</a><br><a href="#7. 开发工具">7. 开发工具</a><br><a href="#8. 自动化工作流程搭建(gulp + browser-sync">8. 自动化工作流程搭建(gulp + browser-sync)</a>)</p>
+<time datetime="2016-12-29T07:26:37.000Z">
+  <i class="fa fa-calendar"></i>&nbsp;
+  2016-12-29
+</time>
+
+
+
+
+
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <h2 id="开发环境的搭建-Mac"><a href="#开发环境的搭建-Mac" class="headerlink" title="开发环境的搭建(Mac)"></a>开发环境的搭建(Mac)</h2><p><a href="#1.  git">1.git</a><br><a href="#2. brew、brew cask">2. brew、brew cask</a><br><a href="#3. nvm、node、npm、bower">3. nvm、node、npm、bower</a><br><a href="#4. zsh">4. zsh</a><br><a href="#5. oh-my-zsh">5. oh-my-zsh</a><br><a href="#6. iterm2">6. iterm2</a><br><a href="#7. 开发工具">7. 开发工具</a><br><a href="#8. 自动化工作流程搭建(gulp + browser-sync">8. 自动化工作流程搭建(gulp + browser-sync)</a>)</p>
 <h3 id="1-git"><a href="#1-git" class="headerlink" title="1.  git"></a>1.  git</h3><p>git是一款目前主流的分布式的版本控制工具。  </p>
 <blockquote>
 <p>关于git的详情，可以参考官网：<a href="https://git-scm.com/" target="_blank" rel="external">https://git-scm.com/</a> </p>
@@ -217,91 +224,80 @@ HTML文件的压缩
 <p>自动化工作流程的复用性很高，在其他的项目下微调目录结构和文件名后可以直接使用。<br>详情可以查看自动化工作流程搭建目录</p>
 </blockquote>
 <h3 id="以上，未完待续，会不断的补充…"><a href="#以上，未完待续，会不断的补充…" class="headerlink" title="以上，未完待续，会不断的补充…"></a>以上，未完待续，会不断的补充…</h3>
-      
+
+  </article>
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
+  </div>
+
+
+
+
     </div>
-    <footer>
-      
-        
-        
-        
-  <div class="addthis addthis_toolbox addthis_default_style">
-    
-      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-    
-    
-      <a class="addthis_button_tweet"></a>
-    
-    
-      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-    
-    
-      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
-    
-    <a class="addthis_counter addthis_pill_style"></a>
   </div>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
-
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-<section id="comment">
-  <h1 class="title">留言</h1>
-
-  
-      <div id="fb-root"></div>
-<script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<div class="fb-comments" data-href="http://vhjmlw.github.io/2016/12/29/开发环境搭建/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
-      
-  
-</section>
-
-</div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="搜索">
-    <input type="hidden" name="q" value="site:vhjmlw.github.io">
-  </form>
+  <footer class="page-footer"><div class="clearfix">
 </div>
-
-  
-
-  
-</aside>
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer" class="inner"><div class="alignleft">
-  
-  &copy; 2016 建磊
-  
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" >
+        <i class="fa fa-arrow-right"></i>
+        </a>
+        © XXX 2015-2016
+    </div>
+    <div class="secondrow">
+        <a href="https://github.com/gaoryrt/hexo-theme-pln">
+        Theme Pln
+        </a>
+    </div>
 </div>
-<div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<div class="clearfix">
+</div>
+</footer>
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="/js/search.js"></script>
 <script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+
+// comments below to disable loading animation
+function revealOnScroll() {
+  var scrolled = $(window).scrollTop();
+  $(".excerpt, .index-title, .index-meta, p").each(function() {
+    var current = $(this),
+      height = $(window).outerHeight(),
+      offsetTop = current.offset().top;
+    (scrolled + height + 50 > offsetTop) ? current.addClass("animation"):'';
+  });
+}
+$(window).on("scroll", revealOnScroll);
+$(document).ready(revealOnScroll)
+
+// disqus scripts
+
+
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
+
+// back to top scripts
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
+  return false;
+});
+
+
+var path = "/search.xml";
+searchFunc(path, 'local-search-input', 'local-search-result');
+
 </script>
 
 </body>
