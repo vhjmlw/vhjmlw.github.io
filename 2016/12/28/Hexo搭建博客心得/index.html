@@ -31,16 +31,16 @@
 <link rel="canonical" href="http://vhjmlw.github.io/2016/12/28/Hexo搭建博客心得/"/>
 
 
-<meta name="description" content="记录下使用Hexo搭建博客的心得">
+<meta name="description" content="记录下使用Hexo搭建博客折腾的过程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo搭建博客心得">
 <meta property="og:url" content="http://vhjmlw.github.io/2016/12/28/Hexo搭建博客心得/index.html">
 <meta property="og:site_name" content="建磊的博客">
-<meta property="og:description" content="记录下使用Hexo搭建博客的心得">
-<meta property="og:updated_time" content="2017-01-01T05:52:20.000Z">
+<meta property="og:description" content="记录下使用Hexo搭建博客折腾的过程">
+<meta property="og:updated_time" content="2017-01-01T05:54:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建博客心得">
-<meta name="twitter:description" content="记录下使用Hexo搭建博客的心得">
+<meta name="twitter:description" content="记录下使用Hexo搭建博客折腾的过程">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.1.0" />
@@ -147,7 +147,7 @@
 
     <div class="post-content">
       
-        <p>记录下使用Hexo搭建博客的心得<br><a id="more"></a>  </p>
+        <p>记录下使用Hexo搭建博客折腾的过程<br><a id="more"></a>  </p>
 <h5 id="当前博客使用Hexo搭建，主题使用的even，简约大方。同类型的还有apollo、Hacker、next等"><a href="#当前博客使用Hexo搭建，主题使用的even，简约大方。同类型的还有apollo、Hacker、next等" class="headerlink" title="当前博客使用Hexo搭建，主题使用的even，简约大方。同类型的还有apollo、Hacker、next等"></a>当前博客使用Hexo搭建，主题使用的even，简约大方。同类型的还有apollo、Hacker、next等</h5><h5 id="但是even主题对于GitHub-Flavour-MarkDown语法的支持并不完善，有些语法解析错误，如：将图片链接解析为纯图片，复选框语法无法解析。"><a href="#但是even主题对于GitHub-Flavour-MarkDown语法的支持并不完善，有些语法解析错误，如：将图片链接解析为纯图片，复选框语法无法解析。" class="headerlink" title="但是even主题对于GitHub Flavour MarkDown语法的支持并不完善，有些语法解析错误，如：将图片链接解析为纯图片，复选框语法无法解析。"></a>但是even主题对于GitHub Flavour MarkDown语法的支持并不完善，有些语法解析错误，如：将图片链接解析为纯图片，复选框语法无法解析。</h5><h5 id="鉴于Hexo-GitHub-Pages搭建个人博客的教程网上已经有很多了，这里就不再描述搭建过程"><a href="#鉴于Hexo-GitHub-Pages搭建个人博客的教程网上已经有很多了，这里就不再描述搭建过程" class="headerlink" title="鉴于Hexo + GitHub Pages搭建个人博客的教程网上已经有很多了，这里就不再描述搭建过程"></a>鉴于Hexo + GitHub Pages搭建个人博客的教程网上已经有很多了，这里就不再描述搭建过程</h5><h5 id="博客访问地址：https-vhjmlw-github-io-或-http-www-jianlei-info"><a href="#博客访问地址：https-vhjmlw-github-io-或-http-www-jianlei-info" class="headerlink" title="博客访问地址：https://vhjmlw.github.io 或 http://www.jianlei.info"></a>博客访问地址：<a href="https://vhjmlw.github.io">https://vhjmlw.github.io</a> 或 <a href="http://www.jianlei.info" target="_blank" rel="external">http://www.jianlei.info</a></h5><h3 id="在博客项目根目录中添加README-md文件"><a href="#在博客项目根目录中添加README-md文件" class="headerlink" title="在博客项目根目录中添加README.md文件"></a>在博客项目根目录中添加README.md文件</h3><p>source目录中的内容相当于源代码文件，里面的内容都会被转换为public目录中的文件。放在source根目录中的文件<code>hexo generate</code>之后都会被转换到public根目录中，如favicon.ico、CNAME。   </p>
 <p><code>hexo deploy</code> 时会完全拷贝 public 下的文件到 <strong><em>.deploy_git</em></strong> 下，同时删除多余的文件，所以提前将 README 放到 <strong><em>.deploy_git</em></strong> 下是不行的。而执行 <code>hexo generate</code> 时，<strong><em>public</em></strong> 文件夹下的文件会被完全更新，同样会删除多余文件，所以也不能提前放在 public 下。理论上应该放在<strong><em>source</em></strong> 文件夹里，但是 .md 文件会被渲染成 html 文件，所以也不行。而在 <code>hexo generate</code> 之后将 README 拷贝到 public 下则是一个可行的方法。   </p>
 <p>操作步骤如下：  </p>
