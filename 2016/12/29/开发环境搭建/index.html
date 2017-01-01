@@ -37,7 +37,7 @@
 <meta property="og:url" content="http://vhjmlw.github.io/2016/12/29/开发环境搭建/index.html">
 <meta property="og:site_name" content="建磊的博客">
 <meta property="og:description" content="记录Mac环境下我自己的开发环境">
-<meta property="og:updated_time" content="2017-01-01T07:20:54.000Z">
+<meta property="og:updated_time" content="2017-01-01T07:54:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开发环境搭建">
 <meta name="twitter:description" content="记录Mac环境下我自己的开发环境">
@@ -140,7 +140,7 @@
       <div class="post-toc" id="post-toc">
         <h2 class="post-toc-title">Contents</h2>
         <div class="post-toc-content">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#开发环境的搭建-Mac"><span class="toc-text">开发环境的搭建(Mac)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-git"><span class="toc-text">1.  git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-brew、brew-cask"><span class="toc-text">2. brew、brew cask</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-nvm、node、npm、bower"><span class="toc-text">3. nvm、node、npm、bower</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-zsh"><span class="toc-text">4. zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-oh-my-zsh"><span class="toc-text">5. oh-my-zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-iterm2"><span class="toc-text">6. iterm2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-开发工具"><span class="toc-text">7. 开发工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-自动化工作流程搭建-gulp-browser-sync"><span class="toc-text">8. 自动化工作流程搭建(gulp + browser-sync)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-项目脚手架scaffold"><span class="toc-text">9. 项目脚手架scaffold</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#脚手架是自动创建自动化工作流程的工具，为整个应用生成一个初始化的模板-快速搭建一个完整的项目的结构。"><span class="toc-text">脚手架是自动创建自动化工作流程的工具，为整个应用生成一个初始化的模板,快速搭建一个完整的项目的结构。</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#以上，未完待续，会不断的补充…"><span class="toc-text">以上，未完待续，会不断的补充…</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#开发环境的搭建-Mac"><span class="toc-text">开发环境的搭建(Mac)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-git"><span class="toc-text">1.  git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-brew、brew-cask"><span class="toc-text">2. brew、brew cask</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-nvm、node、npm、bower"><span class="toc-text">3. nvm、node、npm、bower</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-zsh"><span class="toc-text">4. zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-oh-my-zsh"><span class="toc-text">5. oh-my-zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-iterm2"><span class="toc-text">6. iterm2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-开发工具"><span class="toc-text">7. 开发工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-自动化工作流程搭建-gulp-browser-sync"><span class="toc-text">8. 自动化工作流程搭建(gulp + browser-sync)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-项目脚手架scaffold"><span class="toc-text">9. 项目脚手架scaffold</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#脚手架是自动创建自动化工作流程的工具，为整个应用生成一个初始化的模板-快速搭建一个完整的项目的结构。"><span class="toc-text">脚手架是自动创建自动化工作流程的工具，为整个应用生成一个初始化的模板,快速搭建一个完整的项目的结构。</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-测试"><span class="toc-text">10. 测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#以上，未完待续，会不断的补充…"><span class="toc-text">以上，未完待续，会不断的补充…</span></a></li></ol></li></ol>
         </div>
       </div>
     
@@ -148,7 +148,7 @@
     <div class="post-content">
       
         <p>记录Mac环境下我自己的开发环境<br><a id="more"></a></p>
-<h2 id="开发环境的搭建-Mac"><a href="#开发环境的搭建-Mac" class="headerlink" title="开发环境的搭建(Mac)"></a>开发环境的搭建(Mac)</h2><p><a href="#1.  git">1.git</a><br><a href="#2. brew、brew cask">2. brew、brew cask</a><br><a href="#3. nvm、node、npm、bower">3. nvm、node、npm、bower</a><br><a href="#4. zsh">4. zsh</a><br><a href="#5. oh-my-zsh">5. oh-my-zsh</a><br><a href="#6. iterm2">6. iterm2</a><br><a href="#7. 开发工具">7. 开发工具</a><br><a href="#8. 自动化工作流程搭建(gulp + browser-sync">8. 自动化工作流程搭建(gulp + browser-sync)</a>)<br><a href="#9. 项目脚手架scaffold">9. 项目脚手架scaffold</a>  </p>
+<h2 id="开发环境的搭建-Mac"><a href="#开发环境的搭建-Mac" class="headerlink" title="开发环境的搭建(Mac)"></a>开发环境的搭建(Mac)</h2><p><a href="#1.  git">1.git</a><br><a href="#2. brew、brew cask">2. brew、brew cask</a><br><a href="#3. nvm、node、npm、bower">3. nvm、node、npm、bower</a><br><a href="#4. zsh">4. zsh</a><br><a href="#5. oh-my-zsh">5. oh-my-zsh</a><br><a href="#6. iterm2">6. iterm2</a><br><a href="#7. 开发工具">7. 开发工具</a><br><a href="#8. 自动化工作流程搭建(gulp + browser-sync">8. 自动化工作流程搭建(gulp + browser-sync)</a>)<br><a href="#9. 项目脚手架scaffold">9. 项目脚手架scaffold</a><br><a href="#10. 测试">10. 测试</a>  </p>
 <h3 id="1-git"><a href="#1-git" class="headerlink" title="1.  git"></a>1.  git</h3><p>git是一款目前主流的分布式的版本控制工具。  </p>
 <blockquote>
 <p>关于git的详情，可以参考官网：<a href="https://git-scm.com/" target="_blank" rel="external">https://git-scm.com/</a> </p>
@@ -308,8 +308,11 @@ HTML文件的压缩
 <h5 id="脚手架是自动创建自动化工作流程的工具，为整个应用生成一个初始化的模板-快速搭建一个完整的项目的结构。"><a href="#脚手架是自动创建自动化工作流程的工具，为整个应用生成一个初始化的模板-快速搭建一个完整的项目的结构。" class="headerlink" title="脚手架是自动创建自动化工作流程的工具，为整个应用生成一个初始化的模板,快速搭建一个完整的项目的结构。"></a>脚手架是自动创建自动化工作流程的工具，为整个应用生成一个初始化的模板,快速搭建一个完整的项目的结构。</h5><blockquote>
 <p>在实际的开发过程中，从零开始建立项目的结构是一件让人头疼的事情，所以各种各样的脚手架工具应运而生。较常见的脚手架工具有<a href="http://yeoman.io" target="_blank" rel="external">yoeman</a>，<a href="http://expressjs.com/zh-cn/starter/generator.html" target="_blank" rel="external">express-generator</a>和<a href="https://github.com/vuejs/vue-cli" target="_blank" rel="external">vue-cli</a>。它们功能丰富，但最核心的功能都是能够快速搭建一个完整的项目的结构，开发者只需要在生成的项目结构的基础上进行开发即可，非常简单高效。  </p>
 </blockquote>
-<p>关于脚手架的使用，稍后补充</p>
-<h3 id="以上，未完待续，会不断的补充…"><a href="#以上，未完待续，会不断的补充…" class="headerlink" title="以上，未完待续，会不断的补充…"></a>以上，未完待续，会不断的补充…</h3>
+<p>关于脚手架的使用，后期补充</p>
+<h3 id="10-测试"><a href="#10-测试" class="headerlink" title="10. 测试"></a>10. 测试</h3><p><a href="http://fex.baidu.com/blog/2015/07/front-end-test" target="_blank" rel="external">FEX前端自动化测试探索</a><br><a href="http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html" target="_blank" rel="external">测试框架Mocha实例教程</a><br><a href="http://blog.fens.me/nodejs-karma-jasmine/" target="_blank" rel="external">Karma和Jasmine自动化单元测试</a></p>
+<p>关于测试环境的搭建，后期补充</p>
+<h3 id="以上，未完待续，会不断的补充…"><a href="#以上，未完待续，会不断的补充…" class="headerlink" title="以上，未完待续，会不断的补充…"></a>以上，未完待续，会不断的补充…</h3><p><a href="#开发环境的搭建(Mac">回到顶部</a>)</p>
+
       
     </div>
 
