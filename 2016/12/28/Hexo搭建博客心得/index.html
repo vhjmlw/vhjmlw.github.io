@@ -37,7 +37,7 @@
 <meta property="og:url" content="http://vhjmlw.github.io/2016/12/28/Hexo搭建博客心得/index.html">
 <meta property="og:site_name" content="建磊的博客">
 <meta property="og:description" content="记录下使用Hexo搭建博客折腾的过程">
-<meta property="og:updated_time" content="2017-01-01T05:57:13.000Z">
+<meta property="og:updated_time" content="2017-01-01T05:59:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建博客心得">
 <meta name="twitter:description" content="记录下使用Hexo搭建博客折腾的过程">
@@ -177,7 +177,7 @@
 </ol>
 <p>在文章正文的开头，使用简短的一句话描述该文章的主题，作为文章的摘要，然后使用<code>&lt;!--more--&gt;</code>来分割，下面开始写文章的正文。这样就可以实现首页只显示标题和摘要。  </p>
 <blockquote>
-<p>注意：如果下面的文章没有设置摘要，则会继承上面<strong><em>第一个设置了摘要的文章</em></strong>的摘要。<br>如果文章单独设置了自己的摘要，则会显示文正自己的。<br>所以，以后每个文章都单独设置自己的摘要。<br>参考链接：<a href="https://ohmyarch.github.io/2014/12/24/Hexo主页显示摘要" target="_blank" rel="external">https://ohmyarch.github.io/2014/12/24/Hexo主页显示摘要</a>    </p>
+<p>注意：如果下面的文章没有设置摘要，则会继承上面<strong><em>第一个设置了摘要的文章</em></strong>的摘要。<br>如果文章单独设置了自己的摘要，则会显示文章自己的。<br>所以，以后每个文章都单独设置自己的摘要。<br>参考链接：<a href="https://ohmyarch.github.io/2014/12/24/Hexo主页显示摘要" target="_blank" rel="external">https://ohmyarch.github.io/2014/12/24/Hexo主页显示摘要</a>    </p>
 </blockquote>
 <p>2.hexo-front-matter-excerpt：该插件可以简化原生的写法。只需要在文章的头部添加一个新的字段<code>excerpt</code>，直接在该字段的后面书写文章的摘要部分即可。<br>   该插件实现的效果和原生的是一样的，同样的，如果下面的文章没有设置摘要，会继承上面的。<br>   该插件支持原生的写法。<br>   原生写法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: &quot;Example Post&quot;</div><div class="line">---</div><div class="line">This is my post excerpt</div><div class="line">&lt;!-- more --&gt;</div><div class="line">Man, I really love writing posts on my nifty blog!</div></pre></td></tr></table></figure></p>
 <p>   使用插件后的写法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: &quot;Example Post&quot;</div><div class="line">excerpt: &quot;This is my post excerpt&quot;</div><div class="line">---</div><div class="line">Man, I really love writing posts on my nifty blog!</div></pre></td></tr></table></figure></p>
