@@ -1,319 +1,65 @@
-<!doctype html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-CN">
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
+  <meta charset="utf-8">
+  
+  <title>开发环境搭建 | 建磊的博客</title>
+  <meta name="author" content="建磊">
+  
+  <meta name="description" content="记录Mac环境下我自己的开发环境">
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
-
-
-  
-  
-  
-  
+  <meta property="og:title" content="开发环境搭建"/>
+  <meta property="og:site_name" content="建磊的博客"/>
 
   
-    
-    
+    <meta property="og:image" content="undefined"/>
   
 
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="建磊的博客" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
 
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
-
-
-
-
-
-
-<meta name="description" content="记录Mac环境下我自己的开发环境">
-<meta property="og:type" content="article">
-<meta property="og:title" content="开发环境搭建">
-<meta property="og:url" content="http://vhjmlw.github.io/2016/12/29/开发环境搭建/index.html">
-<meta property="og:site_name" content="建磊的博客">
-<meta property="og:description" content="记录Mac环境下我自己的开发环境">
-<meta property="og:updated_time" content="2017-01-01T08:13:35.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开发环境搭建">
-<meta name="twitter:description" content="记录Mac环境下我自己的开发环境">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://vhjmlw.github.io/2016/12/29/开发环境搭建/"/>
-
-
-
-
-
-  <title> 开发环境搭建 | 建磊的博客 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-  
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">建磊的博客</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-    
-      <p class="site-subtitle">爱钻研，爱技术；同时爱电影，爱音乐。</p>
-    
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">建磊的博客</a></h1>
+  <h2><a href="/">爱钻研，爱技术；同时爱电影，爱音乐。</a></h2>
 </div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Startseite
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archiv
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
 </nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-12-29T07:26:37.000Z"><a href="/2016/12/29/开发环境搭建/">2016-12-29</a></time>
+      
+      
+  
+    <h1 class="title">开发环境搭建</h1>
+  
 
-
-
- </div>
     </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://vhjmlw.github.io/2016/12/29/开发环境搭建/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="建磊">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="建磊的博客">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="建磊的博客" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                开发环境搭建
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-29T15:26:37+08:00">
-                2016-12-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
+    <div class="entry">
       
         <p>记录Mac环境下我自己的开发环境<br><a id="more"></a></p>
 <h2 id="开发环境的搭建-Mac"><a href="#开发环境的搭建-Mac" class="headerlink" title="开发环境的搭建(Mac)"></a>开发环境的搭建(Mac)</h2><p><a href="#1.  git">1.git</a><br><a href="#2. brew、brew cask">2. brew、brew cask</a><br><a href="#3. nvm、node、npm、bower">3. nvm、node、npm、bower</a><br><a href="#4. zsh">4. zsh</a><br><a href="#5. oh-my-zsh">5. oh-my-zsh</a><br><a href="#6. iterm2">6. iterm2</a><br><a href="#7. 开发工具">7. 开发工具</a><br><a href="#8. 自动化工作流程搭建(gulp + browser-sync">8. 自动化工作流程搭建(gulp + browser-sync)</a>)<br><a href="#9. 项目脚手架scaffold">9. 项目脚手架scaffold</a><br><a href="#10. 测试">10. 测试</a>  </p>
@@ -482,297 +228,90 @@ HTML文件的压缩
 <h3 id="以上，未完待续，会不断的补充…"><a href="#以上，未完待续，会不断的补充…" class="headerlink" title="以上，未完待续，会不断的补充…"></a>以上，未完待续，会不断的补充…</h3>
       
     </div>
-
-    <div>
+    <footer>
       
         
-
-      
-    </div>
-
-    <div>
-      
         
-
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/12/28/Hexo搭建博客心得/" rel="next" title="Hexo搭建博客心得">
-                <i class="fa fa-chevron-left"></i> Hexo搭建博客心得
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/29/MarkDown语法总结/" rel="prev" title="MarkDown语法总结">
-                MarkDown语法总结 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
     
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
   </div>
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
 
       
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="建磊" />
-          <p class="site-author-name" itemprop="name">建磊</p>
-          <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-        <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">Artikel</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#开发环境的搭建-Mac"><span class="nav-number">1.</span> <span class="nav-text">开发环境的搭建(Mac)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-git"><span class="nav-number">1.1.</span> <span class="nav-text">1.  git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-brew、brew-cask"><span class="nav-number">1.2.</span> <span class="nav-text">2. brew、brew cask</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-nvm、node、npm、bower"><span class="nav-number">1.3.</span> <span class="nav-text">3. nvm、node、npm、bower</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-zsh"><span class="nav-number">1.4.</span> <span class="nav-text">4. zsh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-oh-my-zsh"><span class="nav-number">1.5.</span> <span class="nav-text">5. oh-my-zsh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-iterm2"><span class="nav-number">1.6.</span> <span class="nav-text">6. iterm2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-开发工具"><span class="nav-number">1.7.</span> <span class="nav-text">7. 开发工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-自动化工作流程搭建-gulp-browser-sync"><span class="nav-number">1.8.</span> <span class="nav-text">8. 自动化工作流程搭建(gulp + browser-sync)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-项目脚手架scaffold"><span class="nav-number">1.9.</span> <span class="nav-text">9. 项目脚手架scaffold</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#脚手架是自动创建自动化工作流程的工具，为整个应用生成一个初始化的模板-快速搭建一个完整的项目的结构。"><span class="nav-number">1.9.0.1.</span> <span class="nav-text">脚手架是自动创建自动化工作流程的工具，为整个应用生成一个初始化的模板,快速搭建一个完整的项目的结构。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-测试"><span class="nav-number">1.10.</span> <span class="nav-text">10. 测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#以上，未完待续，会不断的补充…"><span class="nav-number">1.11.</span> <span class="nav-text">以上，未完待续，会不断的补充…</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">建磊</span>
-</div>
-
-
-<div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
-
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
-
-
-        
-
-        
-      </div>
+      <div class="clearfix"></div>
     </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
   </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
 
   
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 </script>
 
-
-
-
-
-
-
-
-
+<div class="fb-comments" data-href="http://vhjmlw.github.io/2016/12/29/开发环境搭建/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
   
+</section>
 
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-  
-  
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:vhjmlw.github.io">
+  </form>
+</div>
 
   
 
   
-
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
   
-
+  &copy; 2017 建磊
   
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
 
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
 
 </body>
 </html>
