@@ -37,7 +37,7 @@
 <meta property="og:url" content="http://vhjmlw.github.io/2017/03/29/使用create-react-app-ant-design快速搭建前端项目/index.html">
 <meta property="og:site_name" content="建磊的博客">
 <meta property="og:description" content="记录使用create-react-app和ant-design快速搭建前端项目的过程">
-<meta property="og:updated_time" content="2017-03-29T14:45:36.000Z">
+<meta property="og:updated_time" content="2017-03-29T14:48:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用create-react-app+ant-design快速搭建前端项目">
 <meta name="twitter:description" content="记录使用create-react-app和ant-design快速搭建前端项目的过程">
@@ -137,14 +137,19 @@
     </header>
 
     
+      <div class="post-toc" id="post-toc">
+        <h2 class="post-toc-title">Contents</h2>
+        <div class="post-toc-content">
+          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用create-react-app-ant-design快速搭建前端项目"><span class="toc-text">使用create-react-app + ant-design快速搭建前端项目</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#create-react-app"><span class="toc-text">create-react-app</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ant-design"><span class="toc-text">ant-design</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#react-router"><span class="toc-text">react-router</span></a></li></ol></li></ol>
+        </div>
+      </div>
+    
 
     <div class="post-content">
       
         <p>记录使用create-react-app和ant-design快速搭建前端项目的过程    </p>
 <a id="more"></a>
-<p>###使用create-react-app + ant-design快速搭建前端项目</p>
-<p>####create-react-app</p>
-<p>create-react-app是来自于Facebook出品的零配置命令行工具，能够帮你自动创建基于Webpack+ES6的最简易的React项目模板，有助于初学者快速上手实践。</p>
+<h3 id="使用create-react-app-ant-design快速搭建前端项目"><a href="#使用create-react-app-ant-design快速搭建前端项目" class="headerlink" title="使用create-react-app + ant-design快速搭建前端项目"></a>使用create-react-app + ant-design快速搭建前端项目</h3><h4 id="create-react-app"><a href="#create-react-app" class="headerlink" title="create-react-app"></a>create-react-app</h4><p>create-react-app是来自于Facebook出品的零配置命令行工具，能够帮你自动创建基于Webpack+ES6的最简易的React项目模板，有助于初学者快速上手实践。</p>
 <p>create-react-app的方式也非常简单，可以直接使用 npm 命令进行全局安装。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g create-react-app</div></pre></td></tr></table></figure>
 <p>新建一个项目</p>
@@ -184,8 +189,7 @@
 <p>执行npm run start命令后，会开启一个服务器，在开发阶段如果需要调用后台的API接口与后台进行交互，会遇到跨域的问题，解决办法如下：<br>在package.json配置文件中新添加一个字段：<code>proxy&quot;: &quot;http://192.168.1.128:8088&quot;</code><br>这样的话，webpack开启的本地服务器会作为一个代理服务器，将请求转发给我们指定的服务器，如这里的<a href="http://192.168.1.128:8088" target="_blank" rel="external">http://192.168.1.128:8088</a> 从而解决了跨域的问题。    </p>
 <p>详情可以参考链接：<br><a href="https://segmentfault.com/q/1010000008508440" target="_blank" rel="external">https://segmentfault.com/q/1010000008508440</a><br><a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#proxying-api-requests-in-development" target="_blank" rel="external">https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#proxying-api-requests-in-development</a></p>
 <p>关于create-react-app，详情可以参考官方链接：<br><a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">https://github.com/facebookincubator/create-react-app</a></p>
-<p>####ant-design    </p>
-<p>Ant Design是第一个由国内团队开发的面向世界的集视觉规范、交互模式、前端组件于一体的Web设计语言，或者可以称为Web设计规范。<br>Ant Design 提供了一套非常完整的 组件化设计规范 与 组件化编码规范，大幅提高了部分产品的设计研发效率及质量。   </p>
+<h4 id="ant-design"><a href="#ant-design" class="headerlink" title="ant-design"></a>ant-design</h4><p>Ant Design是第一个由国内团队开发的面向世界的集视觉规范、交互模式、前端组件于一体的Web设计语言，或者可以称为Web设计规范。<br>Ant Design 提供了一套非常完整的 组件化设计规范 与 组件化编码规范，大幅提高了部分产品的设计研发效率及质量。   </p>
 <p>在create-react-app搭建的项目中使用ant-design：<br>使用npm安装antd：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install antd --save</div></pre></td></tr></table></figure>
 <p>在src/App.js文件中，引入antd的按钮组件：</p>
@@ -193,8 +197,7 @@
 <p>在src/App.css文件中，在文件顶部引入 antd/dist/antd.css：    </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">/*手动引入ant-design的样式文件*/</div><div class="line">@import &apos;~antd/dist/antd.css&apos;;</div><div class="line"></div><div class="line">.App &#123;</div><div class="line">  text-align: center;</div><div class="line">&#125;</div><div class="line"></div><div class="line">...</div></pre></td></tr></table></figure>
 <p>关于ant-design，详情可以参考链接：<br><a href="https://ant.design/docs/react/introduce-cn" target="_blank" rel="external">https://ant.design/docs/react/introduce-cn</a><br><a href="https://www.zhihu.com/question/33629737" target="_blank" rel="external">https://www.zhihu.com/question/33629737</a>     </p>
-<p>####react-router</p>
-<p>React Router 一个针对React而设计的路由解决方案、可以友好的帮你解决React components 到URl之间的同步映射关系。</p>
+<h4 id="react-router"><a href="#react-router" class="headerlink" title="react-router"></a>react-router</h4><p>React Router 一个针对React而设计的路由解决方案、可以友好的帮你解决React components 到URl之间的同步映射关系。</p>
 
       
     </div>
