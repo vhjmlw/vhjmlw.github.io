@@ -1,4 +1,153 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> git初体验 · 建磊的博客</title><meta name="description" content="git初体验 - 建磊"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://vhjmlw.github.io/atom.xml" title="建磊的博客"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/sunchongsheng" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/pinggod" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">git初体验</h1><div class="post-info">2017年4月9日</div><div class="post-content"><p>学习Git的基本用法<br><a id="more"></a></p>
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="git初体验"/>
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="建磊的博客">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.1.0" />
+
+
+
+<link rel="canonical" href="http://vhjmlw.github.io/2017/04/09/git初体验/"/>
+
+
+<meta name="description" content="学习Git的基本用法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git初体验">
+<meta property="og:url" content="http://vhjmlw.github.io/2017/04/09/git初体验/index.html">
+<meta property="og:site_name" content="建磊的博客">
+<meta property="og:description" content="学习Git的基本用法">
+<meta property="og:updated_time" content="2017-04-09T14:59:37.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git初体验">
+<meta name="twitter:description" content="学习Git的基本用法">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.1.0" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  
+
+
+
+    <title> git初体验 · 建磊的博客 </title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">建磊的博客</a>
+</div>
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            Archives
+          </a>
+        </li>
+      
+      
+    </ul>
+  
+</nav>
+
+<div class="mobile-navbar">
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="/." class="logo">建磊的博客</a>
+    </div>
+
+    <div class="mobile-header-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <nav class="mobile-menu">
+    
+      
+      <a class="mobile-menu-item" href="/">
+        Home
+      </a>
+    
+      
+      <a class="mobile-menu-item" href="/archives/">
+        Archives
+      </a>
+    
+  </nav>
+</div>
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          git初体验
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017年4月9日
+        </span>
+      </div>
+    </header>
+
+    
+      <div class="post-toc" id="post-toc">
+        <h2 class="post-toc-title">Contents</h2>
+        <div class="post-toc-content">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git"><span class="toc-text">git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#git命令"><span class="toc-text">git命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#git-config-设置git的配置"><span class="toc-text">git config  设置git的配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-init-初始化仓库"><span class="toc-text">git init  初始化仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-status-查看状态"><span class="toc-text">git status  查看状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-add-将文件纳入版本控制"><span class="toc-text">git add  将文件纳入版本控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-commit-提交代码"><span class="toc-text">git commit  提交代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git-log-查看所有的提交记录"><span class="toc-text">git log   查看所有的提交记录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#git-add-amp-git-commit"><span class="toc-text">git add & git commit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-remote-关联远程仓库（以GitHub为例）"><span class="toc-text">git remote  关联远程仓库（以GitHub为例）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-push-向远程仓库提交代码"><span class="toc-text">git push  向远程仓库提交代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-pull-从远程仓库更新代码"><span class="toc-text">git pull  从远程仓库更新代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-branch-分支"><span class="toc-text">git branch  分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-merge-合并分支"><span class="toc-text">git merge  合并分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-reset-版本回滚"><span class="toc-text">git reset 版本回滚</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#gitignore"><span class="toc-text">.gitignore</span></a></li></ol></li></ol></li></ol>
+        </div>
+      </div>
+    
+
+    <div class="post-content">
+      
+        <p>学习Git的基本用法<br><a id="more"></a></p>
 <h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p>参考链接：<br><a href="http://git.oschina.net/progit/" target="_blank" rel="external">http://git.oschina.net/progit/</a><br><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000</a><br><a href="https://git-scm.com/book/zh/v2/" target="_blank" rel="external">https://git-scm.com/book/zh/v2/</a><br><a href="http://www.runoob.com/git/git-tutorial.html" target="_blank" rel="external">http://www.runoob.com/git/git-tutorial.html</a>    </p>
 <h3 id="git命令"><a href="#git命令" class="headerlink" title="git命令"></a>git命令</h3><h4 id="git-config-设置git的配置"><a href="#git-config-设置git的配置" class="headerlink" title="git config  设置git的配置"></a>git config  设置git的配置</h4><p>设置自己的名字和邮箱：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &apos;jianlei&apos;             #全局设置自己的名字</div><div class="line">git config --global user.email &apos;1028362931@qq.com&apos;  #全局设置自己的邮箱</div><div class="line">git config user.name &apos;zhangjianlei&apos;                 #设置当前项目的名字</div><div class="line">git config user.email &apos;lei1028362931@gmail.com&apos;     #设置当前项目的邮箱</div></pre></td></tr></table></figure>
@@ -44,4 +193,124 @@
 <h4 id="git-reset-版本回滚"><a href="#git-reset-版本回滚" class="headerlink" title="git reset 版本回滚"></a>git reset 版本回滚</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset --hard 130f10a    #130f10a是每次提交后生成的SHA1哈希值</div></pre></td></tr></table></figure>
 <p>将版本回滚到指定的提交的版本。</p>
 <h4 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h4><p>在git仓库根目录里面有一个<code>.gitignore</code>隐藏文件，该文件记录的是不被git纳入版本管理的文件或目录。记录的都是被git忽视的文件或目录。</p>
-</div></article></div></main><footer><div class="paginator"><a href="/2017/03/30/ES2015学习总结/" class="next">NEXT</a></div><div class="copyright"><p>© 2015 - 2017 <a href="http://vhjmlw.github.io">建磊</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
+
+      
+    </div>
+
+    
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+        </div>  
+      </main>
+
+      <footer id="footer" class="footer">
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:lei1028362931@gmail.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+        
+          <a href="http://stackoverflow.com/users/7356556/张建磊" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+        
+      
+    
+      
+        
+          <a href="http://stackoverflow.com/users/7356556/张建磊" class="iconfont icon-twitter" title="twitter"></a>
+        
+      
+    
+      
+        
+          <a href="https://www.facebook.com/profile.php?id=100005888440355" class="iconfont icon-facebook" title="facebook"></a>
+        
+      
+    
+      
+        
+          <a href="https://github.com/vhjmlw" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+        
+          <a href="http://www.jianlei.me" class="iconfont icon-weibo" title="weibo"></a>
+        
+      
+    
+      
+        
+          <a href="https://www.zhihu.com/people/zhang-jian-lei-7" class="iconfont icon-zhihu" title="zhihu"></a>
+        
+      
+    
+    
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2016 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">建磊</span>
+  </span>
+</div>
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+
+
+    
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.1.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.1.0"></script>
+
+  </body>
+</html>
