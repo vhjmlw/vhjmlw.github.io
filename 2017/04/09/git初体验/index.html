@@ -37,7 +37,7 @@
 <meta property="og:url" content="http://vhjmlw.github.io/2017/04/09/git初体验/index.html">
 <meta property="og:site_name" content="建磊的博客">
 <meta property="og:description" content="学习Git的基本用法">
-<meta property="og:updated_time" content="2018-04-09T02:57:02.843Z">
+<meta property="og:updated_time" content="2018-04-09T03:12:32.099Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git初体验">
 <meta name="twitter:description" content="学习Git的基本用法">
@@ -72,14 +72,14 @@
         
         <li class="menu-item">
           <a class="menu-item-link" href="/">
-            Home
+            首页
           </a>
         </li>
       
         
         <li class="menu-item">
           <a class="menu-item-link" href="/archives/">
-            Archives
+            归档
           </a>
         </li>
       
@@ -104,12 +104,12 @@
     
       
       <a class="mobile-menu-item" href="/">
-        Home
+        首页
       </a>
     
       
       <a class="mobile-menu-item" href="/archives/">
-        Archives
+        归档
       </a>
     
   </nav>
@@ -138,9 +138,9 @@
 
     
       <div class="post-toc" id="post-toc">
-        <h2 class="post-toc-title">Contents</h2>
+        <h2 class="post-toc-title">文章目录</h2>
         <div class="post-toc-content">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git"><span class="toc-text">git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#git命令"><span class="toc-text">git命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#git-config-设置git的配置"><span class="toc-text">git config  设置git的配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-init-初始化仓库"><span class="toc-text">git init  初始化仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-status-查看状态"><span class="toc-text">git status  查看状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-add-将文件纳入版本控制"><span class="toc-text">git add  将文件纳入版本控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-commit-提交代码"><span class="toc-text">git commit  提交代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git-log-查看所有的提交记录"><span class="toc-text">git log   查看所有的提交记录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#git-add-amp-git-commit"><span class="toc-text">git add & git commit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-remote-关联远程仓库（以GitHub为例）"><span class="toc-text">git remote  关联远程仓库（以GitHub为例）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-push-向远程仓库提交代码"><span class="toc-text">git push  向远程仓库提交代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-pull-从远程仓库更新代码"><span class="toc-text">git pull  从远程仓库更新代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-branch-分支"><span class="toc-text">git branch  分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-merge-合并分支"><span class="toc-text">git merge  合并分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-reset-版本回滚"><span class="toc-text">git reset 版本回滚</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#gitignore"><span class="toc-text">.gitignore</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#参考链接"><span class="toc-text">参考链接</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git"><span class="toc-text">git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#git命令"><span class="toc-text">git命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#git-config-设置git的配置"><span class="toc-text">git config  设置git的配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-init-初始化仓库"><span class="toc-text">git init  初始化仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-status-查看状态"><span class="toc-text">git status  查看状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-add-将文件纳入版本控制"><span class="toc-text">git add  将文件纳入版本控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-commit-提交代码"><span class="toc-text">git commit  提交代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git-log-查看所有的提交记录"><span class="toc-text">git log   查看所有的提交记录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#git-add-amp-git-commit"><span class="toc-text">git add & git commit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-remote-关联远程仓库（以GitHub为例）"><span class="toc-text">git remote  关联远程仓库（以GitHub为例）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-push-向远程仓库提交代码"><span class="toc-text">git push  向远程仓库提交代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-pull-从远程仓库更新代码"><span class="toc-text">git pull  从远程仓库更新代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-branch-分支"><span class="toc-text">git branch  分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-merge-合并分支"><span class="toc-text">git merge  合并分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-reset-版本回滚"><span class="toc-text">git reset 版本回滚</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#gitignore"><span class="toc-text">.gitignore</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#回退版本后返回版本："><span class="toc-text">回退版本后返回版本：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#参考链接"><span class="toc-text">参考链接</span></a></li></ol></li></ol></li></ol>
         </div>
       </div>
     
@@ -191,12 +191,13 @@
 <h4 id="git-merge-合并分支"><a href="#git-merge-合并分支" class="headerlink" title="git merge  合并分支"></a>git merge  合并分支</h4><p>A同学在a分支代码写的不亦乐乎，终于他的功能完工了，并且测试也都ok了，准备要上线<br>了，这个时候就需要把他的代码合并到主分支master上来，然后发布。<code>git merge</code> 就是合并分<br>支用到的命令，针对这个情况，需要先做两步，第一步是切换到 master 分支，如果你已经在<br>了就不用切换了，第二步执行 git merge second ，意思就是把second分支的代码合并过来，不出意外，<br>这个时候second分支的代码就顺利合并到 master 分支来了。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout master    #切换到master分支</div><div class="line">git merge second       #将second分支合并到master分支</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch -d second     #删除second分支</div><div class="line">git branch -D second     #强制删除second分支，而无视冲突</div></pre></td></tr></table></figure>
-<h4 id="git-reset-版本回滚"><a href="#git-reset-版本回滚" class="headerlink" title="git reset 版本回滚"></a>git reset 版本回滚</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset --hard 130f10a    #130f10a是每次提交后生成的SHA1哈希值</div></pre></td></tr></table></figure>
+<h4 id="git-reset-版本回滚"><a href="#git-reset-版本回滚" class="headerlink" title="git reset 版本回滚"></a>git reset 版本回滚</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git reset --hard 130f10a    #130f10a是每次提交后生成的SHA1哈希值    </div><div class="line">git reflog    #记录每一次命令，回退版本后可以查看后面版本的commit ID</div></pre></td></tr></table></figure>
 <p>将版本回滚到指定的提交的版本。</p>
 <h4 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h4><p>在git仓库根目录里面有一个<code>.gitignore</code>隐藏文件，该文件记录的是不被git纳入版本管理的文件或目录。记录的都是被git忽视的文件或目录。    </p>
 <blockquote>
-<p>git log –oneline：查看所有的提交记录<br>git config –list：查看当前项目的设置<br>git config –global –list：查看全局的设置</p>
+<p>git log –oneline：查看所有的提交记录<br>git log –pretty=oneline：查看所有的提交记录，显示全部的commit ID<br>git config –list：查看当前项目的设置<br>git config –global –list：查看全局的设置<br>git reflog：记录每一次命令，回退版本后可以查看后面版本的commit ID    </p>
 </blockquote>
+<h4 id="回退版本后返回版本："><a href="#回退版本后返回版本：" class="headerlink" title="回退版本后返回版本："></a>回退版本后返回版本：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git log --oneline    #查看要回退版本的commit-id</div><div class="line">git reset --hard commit-id    #回退指定的版本</div><div class="line">git reflog    #查看要返回版本的commit-id</div><div class="line">git reset --hard commit-id    #返回指定的版本</div></pre></td></tr></table></figure>
 <h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><p><a href="https://zhuanlan.zhihu.com/p/25892137" target="_blank" rel="external">Git 命令总结-知乎</a><br><a href="https://www.jianshu.com/p/0fe715a7fbb3" target="_blank" rel="external">怎么用git clone 远程的所有分支</a><br><a href="https://blog.csdn.net/lxf0613050210/article/details/50749881" target="_blank" rel="external">git如何移除某文件的版本控制</a></p>
 
       
@@ -267,11 +268,11 @@
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
   </span>
   
   <span class="theme-info">
-    Theme - 
+    主题 - 
     <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
   </span>
 
