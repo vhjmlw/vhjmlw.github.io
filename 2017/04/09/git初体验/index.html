@@ -37,7 +37,7 @@
 <meta property="og:url" content="http://vhjmlw.github.io/2017/04/09/git初体验/index.html">
 <meta property="og:site_name" content="建磊的博客">
 <meta property="og:description" content="学习Git的基本用法">
-<meta property="og:updated_time" content="2018-04-09T03:12:32.099Z">
+<meta property="og:updated_time" content="2018-04-09T03:19:17.046Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git初体验">
 <meta name="twitter:description" content="学习Git的基本用法">
@@ -72,14 +72,14 @@
         
         <li class="menu-item">
           <a class="menu-item-link" href="/">
-            首页
+            Home
           </a>
         </li>
       
         
         <li class="menu-item">
           <a class="menu-item-link" href="/archives/">
-            归档
+            Archives
           </a>
         </li>
       
@@ -104,12 +104,12 @@
     
       
       <a class="mobile-menu-item" href="/">
-        首页
+        Home
       </a>
     
       
       <a class="mobile-menu-item" href="/archives/">
-        归档
+        Archives
       </a>
     
   </nav>
@@ -138,7 +138,7 @@
 
     
       <div class="post-toc" id="post-toc">
-        <h2 class="post-toc-title">文章目录</h2>
+        <h2 class="post-toc-title">Contents</h2>
         <div class="post-toc-content">
           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git"><span class="toc-text">git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#git命令"><span class="toc-text">git命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#git-config-设置git的配置"><span class="toc-text">git config  设置git的配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-init-初始化仓库"><span class="toc-text">git init  初始化仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-status-查看状态"><span class="toc-text">git status  查看状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-add-将文件纳入版本控制"><span class="toc-text">git add  将文件纳入版本控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-commit-提交代码"><span class="toc-text">git commit  提交代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git-log-查看所有的提交记录"><span class="toc-text">git log   查看所有的提交记录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#git-add-amp-git-commit"><span class="toc-text">git add & git commit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-remote-关联远程仓库（以GitHub为例）"><span class="toc-text">git remote  关联远程仓库（以GitHub为例）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-push-向远程仓库提交代码"><span class="toc-text">git push  向远程仓库提交代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-pull-从远程仓库更新代码"><span class="toc-text">git pull  从远程仓库更新代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-branch-分支"><span class="toc-text">git branch  分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-merge-合并分支"><span class="toc-text">git merge  合并分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-reset-版本回滚"><span class="toc-text">git reset 版本回滚</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#gitignore"><span class="toc-text">.gitignore</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#回退版本后返回版本："><span class="toc-text">回退版本后返回版本：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#参考链接"><span class="toc-text">参考链接</span></a></li></ol></li></ol></li></ol>
         </div>
@@ -195,10 +195,10 @@
 <p>将版本回滚到指定的提交的版本。</p>
 <h4 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h4><p>在git仓库根目录里面有一个<code>.gitignore</code>隐藏文件，该文件记录的是不被git纳入版本管理的文件或目录。记录的都是被git忽视的文件或目录。    </p>
 <blockquote>
-<p>git log –oneline：查看所有的提交记录<br>git log –pretty=oneline：查看所有的提交记录，显示全部的commit ID<br>git config –list：查看当前项目的设置<br>git config –global –list：查看全局的设置<br>git reflog：记录每一次命令，回退版本后可以查看后面版本的commit ID    </p>
+<p>git log –oneline：查看所有的提交记录<br>git log –pretty=oneline：查看所有的提交记录，显示全部的commit ID<br>git config –list：查看当前项目的设置<br>git config –global –list：查看全局的设置<br>git reflog：记录每一次命令，回退版本后可以查看后面版本的commit ID<br>git diff HEAD – readme.txt：查看工作区和本地版本库里面最新版本的区别</p>
 </blockquote>
 <h4 id="回退版本后返回版本："><a href="#回退版本后返回版本：" class="headerlink" title="回退版本后返回版本："></a>回退版本后返回版本：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git log --oneline    #查看要回退版本的commit-id</div><div class="line">git reset --hard commit-id    #回退指定的版本</div><div class="line">git reflog    #查看要返回版本的commit-id</div><div class="line">git reset --hard commit-id    #返回指定的版本</div></pre></td></tr></table></figure>
-<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><p><a href="https://zhuanlan.zhihu.com/p/25892137" target="_blank" rel="external">Git 命令总结-知乎</a><br><a href="https://www.jianshu.com/p/0fe715a7fbb3" target="_blank" rel="external">怎么用git clone 远程的所有分支</a><br><a href="https://blog.csdn.net/lxf0613050210/article/details/50749881" target="_blank" rel="external">git如何移除某文件的版本控制</a></p>
+<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><p><a href="https://zhuanlan.zhihu.com/p/25892137" target="_blank" rel="external">Git 命令总结-知乎</a><br><a href="https://www.jianshu.com/p/0fe715a7fbb3" target="_blank" rel="external">怎么用git clone 远程的所有分支</a><br><a href="https://blog.csdn.net/lxf0613050210/article/details/50749881" target="_blank" rel="external">git如何移除某文件的版本控制</a><br><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰Git教程</a></p>
 
       
     </div>
@@ -268,11 +268,11 @@
 
 <div class="copyright">
   <span class="power-by">
-    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
   </span>
   
   <span class="theme-info">
-    主题 - 
+    Theme - 
     <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
   </span>
 
