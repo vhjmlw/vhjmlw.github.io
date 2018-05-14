@@ -37,7 +37,7 @@
 <meta property="og:url" content="http://vhjmlw.github.io/2017/04/09/git初体验/index.html">
 <meta property="og:site_name" content="建磊的博客">
 <meta property="og:description" content="学习Git的基本用法">
-<meta property="og:updated_time" content="2018-04-09T07:15:27.543Z">
+<meta property="og:updated_time" content="2018-05-14T01:05:03.895Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git初体验">
 <meta name="twitter:description" content="学习Git的基本用法">
@@ -167,7 +167,7 @@
 <p>接着输入 <code>git commit -m &#39;first commit&#39;</code> ，这个命令什么意思呢？ commit 是提交的意思，-m 代表是提交信息，执行了以上命令代表我们已经正式进行了第一次提交。-m 后面的提交信息可以自定义，代表当前提交的概要。<br>这个时候再输入 <code>git status</code> ，会提示 nothing to commit。</p>
 <h3 id="git-log-查看所有的提交记录"><a href="#git-log-查看所有的提交记录" class="headerlink" title="git log   查看所有的提交记录"></a>git log   查看所有的提交记录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git log               #查看所有的提交记录，显示每次提交的详细信息</div><div class="line">git log --oneline     #查看简洁版的提交记录</div></pre></td></tr></table></figure>
 <h4 id="git-add-amp-git-commit"><a href="#git-add-amp-git-commit" class="headerlink" title="git add &amp; git commit"></a>git add &amp; git commit</h4><p>看到这里估计会有疑问，我想要提交直接进行 commit 不就行了么，为什么先要再 add<br>一次呢？首先 git add 是先把改动添加到一个「暂存区」，你可以理解成是一个缓存区域，临<br>时保存你的改动，而 git commit 才是最后真正的提交。这样做的好处就是防止误提交。</p>
-<h4 id="git-remote-关联远程仓库（以GitHub为例）"><a href="#git-remote-关联远程仓库（以GitHub为例）" class="headerlink" title="git remote  关联远程仓库（以GitHub为例）"></a>git remote  关联远程仓库（以GitHub为例）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># origin是远程仓库的别名，可以自定义，origin后面的链接是远程仓库的链接。    </div><div class="line">git remote add origin https://github.com/vhjmlw/test.git    </div><div class="line">#更改关联的远程仓库地址：git remote set-url origin 新地址</div></pre></td></tr></table></figure>
+<h4 id="git-remote-关联远程仓库（以GitHub为例）"><a href="#git-remote-关联远程仓库（以GitHub为例）" class="headerlink" title="git remote  关联远程仓库（以GitHub为例）"></a>git remote  关联远程仓库（以GitHub为例）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># origin是远程仓库的别名，可以自定义，origin后面的链接是远程仓库的链接。    </div><div class="line">git remote add origin https://github.com/vhjmlw/test.git    </div><div class="line"># 更改关联的远程仓库地址：git remote set-url origin 新地址    </div><div class="line"># 删除关联的远程仓库：git remote rm origin</div></pre></td></tr></table></figure>
 <p>把本地 test 项目与 GitHub 上的 test 项目进行关联。    </p>
 <p>意思就是添加一个远程仓库，他的地址是 <a href="https://github.com/vhjmlw/test.git" target="_blank" rel="external">https://github.com/vhjmlw/test.git</a> ，<br>而 <code>origin</code> 是给这个项目的远程仓库起的名字，名字可以随便取，只不过大家公认的<br>只有一个远程仓库时名字就是 origin ，为什么要给远程仓库取名字？因为我们可能一个项目<br>有多个远程仓库？比如 GitHub 一个，比如公司一个，这样的话提交到不同的远程仓库就需要<br>指定不同的仓库名字了。</p>
 <p>查看我们当前项目有哪些远程仓库可以执行如下命令：</p>
