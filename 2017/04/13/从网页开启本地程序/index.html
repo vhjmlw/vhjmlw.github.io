@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="从网页开启本地程序"/>
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="建磊的博客">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.1.0" />
+
+
+
+<link rel="canonical" href="http://vhjmlw.github.io/2017/04/13/从网页开启本地程序/"/>
+
+
+<meta name="description" content="使用URL Protocol自定义协议，从网页开启Windows操作系统的本地程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从网页开启本地程序">
+<meta property="og:url" content="http://vhjmlw.github.io/2017/04/13/从网页开启本地程序/index.html">
+<meta property="og:site_name" content="建磊的博客">
+<meta property="og:description" content="使用URL Protocol自定义协议，从网页开启Windows操作系统的本地程序">
+<meta property="og:image" content="http://i2.muimg.com/567571/79b190605477f625.png">
+<meta property="og:image" content="http://i2.muimg.com/567571/0f514b98dc11167a.png">
+<meta property="og:image" content="http://i2.muimg.com/567571/ef3b0d2fac2d4304.png">
+<meta property="og:image" content="http://i4.buimg.com/567571/7df33cd55b43c877.png">
+<meta property="og:image" content="http://i2.muimg.com/567571/0aa0208433bcbce0.png">
+<meta property="og:image" content="http://i2.muimg.com/567571/6848c9a22e224343.png">
+<meta property="og:image" content="http://i2.muimg.com/567571/8b9714d667b99458.png">
+<meta property="og:image" content="http://i4.buimg.com/567571/cbef3d1121a74558.png">
+<meta property="og:image" content="http://i4.buimg.com/567571/fda3347b5f902a52.png">
+<meta property="og:updated_time" content="2017-04-13T13:36:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="从网页开启本地程序">
+<meta name="twitter:description" content="使用URL Protocol自定义协议，从网页开启Windows操作系统的本地程序">
+<meta name="twitter:image" content="http://i2.muimg.com/567571/79b190605477f625.png">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.1.0" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  
+
+
+
+    <title> 从网页开启本地程序 · 建磊的博客 </title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">建磊的博客</a>
+</div>
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            Archives
+          </a>
+        </li>
+      
+      
+    </ul>
+  
+</nav>
+
+<div class="mobile-navbar">
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="/." class="logo">建磊的博客</a>
+    </div>
+
+    <div class="mobile-header-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <nav class="mobile-menu">
+    
+      
+      <a class="mobile-menu-item" href="/">
+        Home
+      </a>
+    
+      
+      <a class="mobile-menu-item" href="/archives/">
+        Archives
+      </a>
+    
+  </nav>
+</div>
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          从网页开启本地程序
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017年4月13日
+        </span>
+      </div>
+    </header>
+
+    
+      <div class="post-toc" id="post-toc">
+        <h2 class="post-toc-title">Contents</h2>
+        <div class="post-toc-content">
+          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用URL-Protocol自定义协议，从网页开启Windows操作系统本地程序"><span class="toc-text">使用URL Protocol自定义协议，从网页开启Windows操作系统本地程序</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#以下方法知识针对Windows操作系统，其他系统未经测试。"><span class="toc-text">以下方法知识针对Windows操作系统，其他系统未经测试。</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在注册表中建立本地程序（sublime-text）和自定义协议的关联："><span class="toc-text">在注册表中建立本地程序（sublime text）和自定义协议的关联：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在网页中使用我们自定义的协议开启本地程序"><span class="toc-text">在网页中使用我们自定义的协议开启本地程序</span></a></li></ol></li></ol>
+        </div>
+      </div>
+    
+
+    <div class="post-content">
+      
+        <p>使用URL Protocol自定义协议，从网页开启Windows操作系统的本地程序<br><a id="more"></a></p>
+<h3 id="使用URL-Protocol自定义协议，从网页开启Windows操作系统本地程序"><a href="#使用URL-Protocol自定义协议，从网页开启Windows操作系统本地程序" class="headerlink" title="使用URL Protocol自定义协议，从网页开启Windows操作系统本地程序"></a>使用URL Protocol自定义协议，从网页开启Windows操作系统本地程序</h3><p>参考链接：<br><a href="https://wenku.baidu.com/view/29510d746bd97f192279e9cd.html" target="_blank" rel="external">https://wenku.baidu.com/view/29510d746bd97f192279e9cd.html</a><br><a href="https://sspai.com/post/31500" target="_blank" rel="external">https://sspai.com/post/31500</a>   </p>
+<h5 id="以下方法知识针对Windows操作系统，其他系统未经测试。"><a href="#以下方法知识针对Windows操作系统，其他系统未经测试。" class="headerlink" title="以下方法知识针对Windows操作系统，其他系统未经测试。"></a>以下方法知识针对Windows操作系统，其他系统未经测试。</h5><p>有很多场景，如：我们在浏览网页的时候，点击网页上的某个按钮就可以开启迅雷下载资源、开启一个QQ或者旺旺对话框并同时定位到聊天对象。这些场景下，都是通过网页来开启本地的一个应用程序。如：</p>
+<p><img src="http://i2.muimg.com/567571/79b190605477f625.png" alt=""></p>
+<p>实现该效果的原理非常简单：使用外部协议（自定义协议）<code>URL Protocol</code>，通过写注册表将url与本地应用程序关联，然后通过一个网页的超链接点击即可启动，<strong>如果浏览器不识别我们自定义的协议，就会查找注册表，启动与我们自定义的协议相关联的本地的应用程序，并传递参数</strong>。</p>
+<p>恰巧最近的一个项目中有类似的需求，就把整个折腾的过程记录下来，梳理下实现的过程。<br>下面就以点击页面上的按钮开启本地的sublime text编辑器为例。</p>
+<h4 id="在注册表中建立本地程序（sublime-text）和自定义协议的关联："><a href="#在注册表中建立本地程序（sublime-text）和自定义协议的关联：" class="headerlink" title="在注册表中建立本地程序（sublime text）和自定义协议的关联："></a>在注册表中建立本地程序（sublime text）和自定义协议的关联：</h4><ol>
+<li><p>使用win+R快捷键，开启Windows操作系统的<code>运行</code>窗口，在窗口中输入<code>regedit</code>打开注册表编辑器。</p>
+<p><img src="http://i2.muimg.com/567571/0f514b98dc11167a.png" alt=""><br><img src="http://i2.muimg.com/567571/ef3b0d2fac2d4304.png" alt=""></p>
+</li>
+<li><p>在<code>HKEY_CLASSES_ROOT</code>下面新建一个我们自定义的协议名称<code>sublime</code>，该协议名称可以自定义（右键-新建-项-输入sublime）。然后在sublime下面新建项<code>DefaultIcon</code>和<code>shell</code>，在shell下面新建项<code>open</code>，在open下面新建项<code>command</code>。此时我们自定义的协议结构已经完成，整个结构是这样的：</p>
+<p><img src="http://i4.buimg.com/567571/7df33cd55b43c877.png" alt=""></p>
+<p>接下来开始设置每一项对应的值。    </p>
+</li>
+<li><p>首先设置<code>sublime</code>的值：（默认）值可以省略，点击网页按钮弹出alert对话框时会显示该值，这里我们将值设置为<code>URL：sublime专用链接</code>。新建一个字符串值<code>URL Protocol</code>，值可以省略。<br>效果如下：</p>
+<p><img src="http://i2.muimg.com/567571/0aa0208433bcbce0.png" alt=""></p>
+<p>然后设置<code>DefaultIcon</code>项的值：将（默认）值设置为我们要与自定义协议关联的本地程序（只能是exe扩展名）的绝对路径，我们这里是sublime的绝对路径，路径后面跟着参数（该参数的意义暂时未知，貌似也可以省略）。<br>效果如下：</p>
+<p><img src="http://i2.muimg.com/567571/6848c9a22e224343.png" alt=""></p>
+<p>最后设置<code>command</code>项的值：同样将（默认）值设置为我们要启动的本地程序的绝对路径+参数。这里<code>%1</code>就是传递给 exe文件的参数，exe文件接收该参数并执行，如果web网页中的超链接代码为<code>调用远程监控</code>，那么%1这个参数就是<code>“sublime://调用远程监控”</code>字符串。<br>关于参数，sublime://后面的字符串被看作参数，有两种，一种是0，表示完整执行路径，另一种是1，表示网页传过来的字符串。<br>效果如下：</p>
+<p><img src="http://i2.muimg.com/567571/8b9714d667b99458.png" alt=""></p>
+<p>到目前为止，我们在注册表中将本地程序和自定义协议建立关联的步骤已经完成了。</p>
+</li>
+</ol>
+<blockquote>
+<p>迅雷、QQ、旺旺等程序在软件安装的时候，就已经把我们以上建立关联的步骤自动完成了，不需要我们手动操作。</p>
+</blockquote>
+<h4 id="在网页中使用我们自定义的协议开启本地程序"><a href="#在网页中使用我们自定义的协议开启本地程序" class="headerlink" title="在网页中使用我们自定义的协议开启本地程序"></a>在网页中使用我们自定义的协议开启本地程序</h4><p>当点击网页上的<code>点击开启sublime</code>标签时，浏览器就会弹出一个对话框，询问是否同意开启sublime本地程序，点击打开，此时就会打开sublime程序。</p>
+<p><img src="http://i4.buimg.com/567571/cbef3d1121a74558.png" alt=""><br><img src="http://i4.buimg.com/567571/fda3347b5f902a52.png" alt=""></p>
+<p>目前为止，我们已经实现了从网页开启本地程序的功能，使用URL Protocol的时候也可以传递参数给本地程序，本地程序接收到参数之后可以进一步进行处理，实现更加丰富的功能，如点击迅雷下载，可以下载指定的资源；点击QQ聊天可以打开聊天窗口，并定位到指定的QQ号码。</p>
+<p>这里URL Protocol传参的内容暂时就不做介绍，以后补充。</p>
+<blockquote>
+<p>关于使用Markdown时导入本地图片的问题，目前为止还没有特别好的解决办法，可以使用新浪、QQ空间的图床功能，也可以使用base64转换，但都不是特别好，这是使用的是<a href="http://jiantuku.com" target="_blank" rel="external">极简图床</a>提供的服务，免费快速方便，是还不错的解决方案。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+        </div>  
+      </main>
+
+      <footer id="footer" class="footer">
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:lei1028362931@gmail.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+        
+          <a href="http://stackoverflow.com/users/7356556/张建磊" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+        
+      
+    
+      
+        
+          <a href="http://stackoverflow.com/users/7356556/张建磊" class="iconfont icon-twitter" title="twitter"></a>
+        
+      
+    
+      
+        
+          <a href="https://www.facebook.com/profile.php?id=100005888440355" class="iconfont icon-facebook" title="facebook"></a>
+        
+      
+    
+      
+        
+          <a href="https://github.com/vhjmlw" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+        
+          <a href="http://www.jianlei.me" class="iconfont icon-weibo" title="weibo"></a>
+        
+      
+    
+      
+        
+          <a href="https://www.zhihu.com/people/zhang-jian-lei-7" class="iconfont icon-zhihu" title="zhihu"></a>
+        
+      
+    
+    
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2016 - 
+    
+    2018
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">建磊</span>
+  </span>
+</div>
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+
+
+    
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.1.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.1.0"></script>
+
+  </body>
+</html>

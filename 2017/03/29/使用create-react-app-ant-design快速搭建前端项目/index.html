@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="使用create-react-app+ant-design快速搭建前端项目"/>
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="建磊的博客">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.1.0" />
+
+
+
+<link rel="canonical" href="http://vhjmlw.github.io/2017/03/29/使用create-react-app-ant-design快速搭建前端项目/"/>
+
+
+<meta name="description" content="记录使用create-react-app和ant-design快速搭建前端项目的过程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用create-react-app+ant-design快速搭建前端项目">
+<meta property="og:url" content="http://vhjmlw.github.io/2017/03/29/使用create-react-app-ant-design快速搭建前端项目/index.html">
+<meta property="og:site_name" content="建磊的博客">
+<meta property="og:description" content="记录使用create-react-app和ant-design快速搭建前端项目的过程">
+<meta property="og:updated_time" content="2017-03-29T14:48:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用create-react-app+ant-design快速搭建前端项目">
+<meta name="twitter:description" content="记录使用create-react-app和ant-design快速搭建前端项目的过程">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.1.0" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  
+
+
+
+    <title> 使用create-react-app+ant-design快速搭建前端项目 · 建磊的博客 </title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">建磊的博客</a>
+</div>
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            Archives
+          </a>
+        </li>
+      
+      
+    </ul>
+  
+</nav>
+
+<div class="mobile-navbar">
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="/." class="logo">建磊的博客</a>
+    </div>
+
+    <div class="mobile-header-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <nav class="mobile-menu">
+    
+      
+      <a class="mobile-menu-item" href="/">
+        Home
+      </a>
+    
+      
+      <a class="mobile-menu-item" href="/archives/">
+        Archives
+      </a>
+    
+  </nav>
+</div>
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          使用create-react-app+ant-design快速搭建前端项目
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017年3月29日
+        </span>
+      </div>
+    </header>
+
+    
+      <div class="post-toc" id="post-toc">
+        <h2 class="post-toc-title">Contents</h2>
+        <div class="post-toc-content">
+          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用create-react-app-ant-design快速搭建前端项目"><span class="toc-text">使用create-react-app + ant-design快速搭建前端项目</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#create-react-app"><span class="toc-text">create-react-app</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ant-design"><span class="toc-text">ant-design</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#react-router"><span class="toc-text">react-router</span></a></li></ol></li></ol>
+        </div>
+      </div>
+    
+
+    <div class="post-content">
+      
+        <p>记录使用create-react-app和ant-design快速搭建前端项目的过程    </p>
+<a id="more"></a>
+<h3 id="使用create-react-app-ant-design快速搭建前端项目"><a href="#使用create-react-app-ant-design快速搭建前端项目" class="headerlink" title="使用create-react-app + ant-design快速搭建前端项目"></a>使用create-react-app + ant-design快速搭建前端项目</h3><h4 id="create-react-app"><a href="#create-react-app" class="headerlink" title="create-react-app"></a>create-react-app</h4><p>create-react-app是来自于Facebook出品的零配置命令行工具，能够帮你自动创建基于Webpack+ES6的最简易的React项目模板，有助于初学者快速上手实践。</p>
+<p>create-react-app的方式也非常简单，可以直接使用 npm 命令进行全局安装。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g create-react-app</div></pre></td></tr></table></figure>
+<p>新建一个项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create-react-app antd-demo</div></pre></td></tr></table></figure>
+<p>等待一段时间后，工具会自动初始化一个antd-demo目录并安装 React 项目的各种必要依赖。<br>进入项目并启动。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd antd-demo</div><div class="line">npm start</div></pre></td></tr></table></figure>
+<p>此时浏览器会访问 <a href="http://localhost:3000/" target="_blank" rel="external">http://localhost:3000/</a> ，看到 Welcome to React 的界面就算成功了。</p>
+<p>使用create-react-app生成的目录结构如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">├── README.md</div><div class="line">├── package.json</div><div class="line">├── .gitignore</div><div class="line">├── node_modules</div><div class="line">├── public</div><div class="line">│   ├── favicon.ico</div><div class="line">│   └── index.html</div><div class="line">├── src</div><div class="line">│   ├── App.css</div><div class="line">│   ├── App.js</div><div class="line">│   ├── App.test.js</div><div class="line">│   ├── index.css</div><div class="line">│   ├── index.js</div><div class="line">│   └── logo.svg</div><div class="line">└── yarn.lock</div></pre></td></tr></table></figure></p>
+<p>目前为止，已经使用create-react-app脚手架搭建好了一个react项目。</p>
+<p>如果需要对 create-react-app 的默认配置进行自定义。可以使用 eject 命令将所有内建的配置暴露出来。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run eject</div></pre></td></tr></table></figure>
+<p>以上指令执行完后，原项目目录里面会新生成两个目录：<code>config</code>  <code>scripts</code><br><code>config</code>目录存放的是webpack的配置文件。<br><code>scripts</code>目录存放的是package.json配置文件中scripts字段用到的脚本文件。</p>
+<p>create-react-app的三个命令：    </p>
+<ol>
+<li>npm start：开发阶段的命令    <blockquote>
+<p>“start”: “node scripts/start.js”   执行npm start的时候调用start.js文件    </p>
+</blockquote>
+</li>
+</ol>
+<p>执行该指令之后，将会在public目录下开启一个服务器，自动读取index.html文件。更改源代码，效果会在浏览器同步的显示。<br>执行该指令的时候会调用config目录下的webpack.config.dev.js配置文件进行打包。</p>
+<ol>
+<li>npm run build：部署阶段的命令    <blockquote>
+<p>“build”: “node scripts/build.js”  执行npm run build的时候调用build.js文件</p>
+</blockquote>
+</li>
+</ol>
+<p>执行该指令的时候，会调用config目录下的webpack.config.prod.js配置文件进行打包。<br>执行该命令之后，会自动将整个应用打包发布，它会自动使用Webpack控件进行优化与压缩，新生成一个<code>build</code>目录，目录中存放的是呆发布的文件。</p>
+<ol>
+<li>npm run test：测试命令    <blockquote>
+<p>暂时没用过</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm run如果不加任何参数，直接运行，会列出package.json里面所有可以执行的脚本命令。</div><div class="line">npm内置了两个命令简写，npm test等同于执行npm run test，npm start等同于执行npm run start。</div></pre></td></tr></table></figure>
+<p>现在整个项目的完整目录结构如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">├── build					//npm run build命令执行后新生成的目录，文件待部署</div><div class="line">│   ├── static/</div><div class="line">│   ├── asset-manifest.json</div><div class="line">│   ├── favicon.ico</div><div class="line">│   └── index.html</div><div class="line">├── README.md				//create-react-app的官方文档</div><div class="line">├── package.json			//npm的配置文件</div><div class="line">├── .gitignore				//记录不需要使用git版本控制的文件或目录</div><div class="line">├── node_modules/			//npm安装的package都在这里面			</div><div class="line">├── config					//配置文件夹</div><div class="line">│   ├── jest/</div><div class="line">│   ├── env.js</div><div class="line">│   ├── paths.js</div><div class="line">│   ├── polyfills.js</div><div class="line">│   ├── webpack.config.dev.js	//webpack的配置文件，npm start的时候调用</div><div class="line">│   └── webpack.config.prod.js	//webpack的配置文件，npm run build的时候调用</div><div class="line">├── scripts</div><div class="line">│   ├── build.js				//npm run build时执行的js文件</div><div class="line">│   ├── start.js				//npm run start时执行的js文件</div><div class="line">│   └── test.js					//npm run test时执行的js文件</div><div class="line">├── public						//npm run start时在此目录开启一个服务器</div><div class="line">│   ├── favicon.ico</div><div class="line">│   └── index.html</div><div class="line">├── src							//项目的源代码放在此目录</div><div class="line">│   ├── App.css</div><div class="line">│   ├── App.js</div><div class="line">│   ├── App.test.js</div><div class="line">│   ├── index.css</div><div class="line">│   ├── index.js</div><div class="line">│   └── logo.svg</div><div class="line">└── yarn.lock					//package.json配置文件的补充文件</div></pre></td></tr></table></figure></p>
+<p>开发阶段的跨域问题：    </p>
+<p>执行npm run start命令后，会开启一个服务器，在开发阶段如果需要调用后台的API接口与后台进行交互，会遇到跨域的问题，解决办法如下：<br>在package.json配置文件中新添加一个字段：<code>proxy&quot;: &quot;http://192.168.1.128:8088&quot;</code><br>这样的话，webpack开启的本地服务器会作为一个代理服务器，将请求转发给我们指定的服务器，如这里的<a href="http://192.168.1.128:8088" target="_blank" rel="external">http://192.168.1.128:8088</a> 从而解决了跨域的问题。    </p>
+<p>详情可以参考链接：<br><a href="https://segmentfault.com/q/1010000008508440" target="_blank" rel="external">https://segmentfault.com/q/1010000008508440</a><br><a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#proxying-api-requests-in-development" target="_blank" rel="external">https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#proxying-api-requests-in-development</a></p>
+<p>关于create-react-app，详情可以参考官方链接：<br><a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">https://github.com/facebookincubator/create-react-app</a></p>
+<h4 id="ant-design"><a href="#ant-design" class="headerlink" title="ant-design"></a>ant-design</h4><p>Ant Design是第一个由国内团队开发的面向世界的集视觉规范、交互模式、前端组件于一体的Web设计语言，或者可以称为Web设计规范。<br>Ant Design 提供了一套非常完整的 组件化设计规范 与 组件化编码规范，大幅提高了部分产品的设计研发效率及质量。   </p>
+<p>在create-react-app搭建的项目中使用ant-design：<br>使用npm安装antd：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install antd --save</div></pre></td></tr></table></figure>
+<p>在src/App.js文件中，引入antd的按钮组件：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//使用ES6的语法，import引入需要使用的组件即可，如Button</span></div><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; Button &#125; <span class="keyword">from</span> <span class="string">'antd'</span>;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">      &lt;div className="App"&gt;</div><div class="line">        &lt;Button type="primary"&gt;Button&lt;/Button&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</div></pre></td></tr></table></figure>
+<p>在src/App.css文件中，在文件顶部引入 antd/dist/antd.css：    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">/*手动引入ant-design的样式文件*/</div><div class="line">@import &apos;~antd/dist/antd.css&apos;;</div><div class="line"></div><div class="line">.App &#123;</div><div class="line">  text-align: center;</div><div class="line">&#125;</div><div class="line"></div><div class="line">...</div></pre></td></tr></table></figure>
+<p>关于ant-design，详情可以参考链接：<br><a href="https://ant.design/docs/react/introduce-cn" target="_blank" rel="external">https://ant.design/docs/react/introduce-cn</a><br><a href="https://www.zhihu.com/question/33629737" target="_blank" rel="external">https://www.zhihu.com/question/33629737</a>     </p>
+<h4 id="react-router"><a href="#react-router" class="headerlink" title="react-router"></a>react-router</h4><p>React Router 一个针对React而设计的路由解决方案、可以友好的帮你解决React components 到URl之间的同步映射关系。</p>
+
+      
+    </div>
+
+    
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+        </div>  
+      </main>
+
+      <footer id="footer" class="footer">
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:lei1028362931@gmail.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+        
+          <a href="http://stackoverflow.com/users/7356556/张建磊" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+        
+      
+    
+      
+        
+          <a href="http://stackoverflow.com/users/7356556/张建磊" class="iconfont icon-twitter" title="twitter"></a>
+        
+      
+    
+      
+        
+          <a href="https://www.facebook.com/profile.php?id=100005888440355" class="iconfont icon-facebook" title="facebook"></a>
+        
+      
+    
+      
+        
+          <a href="https://github.com/vhjmlw" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+        
+          <a href="http://www.jianlei.me" class="iconfont icon-weibo" title="weibo"></a>
+        
+      
+    
+      
+        
+          <a href="https://www.zhihu.com/people/zhang-jian-lei-7" class="iconfont icon-zhihu" title="zhihu"></a>
+        
+      
+    
+    
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2016 - 
+    
+    2018
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">建磊</span>
+  </span>
+</div>
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+
+
+    
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.1.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.1.0"></script>
+
+  </body>
+</html>
