@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="Cordova混合APP打包发布流程"/>
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="建磊的博客">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.1.0" />
+
+
+
+<link rel="canonical" href="http://vhjmlw.github.io/2019/12/28/cordova混合APP打包发布流程/"/>
+
+
+<meta name="description" content="记录Cordova框架开发混合APP打包及发布的流程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cordova混合APP打包发布流程">
+<meta property="og:url" content="http://vhjmlw.github.io/2019/12/28/cordova混合APP打包发布流程/index.html">
+<meta property="og:site_name" content="建磊的博客">
+<meta property="og:description" content="记录Cordova框架开发混合APP打包及发布的流程">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577347125_39.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577244287_2.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577245293_39.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432131_82.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577242957_12.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577245562_22.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577245336_24.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432380_15.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432536_55.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432628_69.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432800_56.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432888_58.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432923_66.png">
+<meta property="og:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432996_68.png">
+<meta property="og:updated_time" content="2020-02-16T14:25:41.163Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cordova混合APP打包发布流程">
+<meta name="twitter:description" content="记录Cordova框架开发混合APP打包及发布的流程">
+<meta name="twitter:image" content="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577347125_39.png">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.1.0" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  
+
+
+
+    <title> Cordova混合APP打包发布流程 · 建磊的博客 </title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">建磊的博客</a>
+</div>
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            Archives
+          </a>
+        </li>
+      
+      
+    </ul>
+  
+</nav>
+
+<div class="mobile-navbar">
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="/." class="logo">建磊的博客</a>
+    </div>
+
+    <div class="mobile-header-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <nav class="mobile-menu">
+    
+      
+      <a class="mobile-menu-item" href="/">
+        Home
+      </a>
+    
+      
+      <a class="mobile-menu-item" href="/archives/">
+        Archives
+      </a>
+    
+  </nav>
+</div>
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          Cordova混合APP打包发布流程
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019年12月28日
+        </span>
+      </div>
+    </header>
+
+    
+      <div class="post-toc" id="post-toc">
+        <h2 class="post-toc-title">Contents</h2>
+        <div class="post-toc-content">
+          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Cordova混合APP打包发布流程"><span class="toc-text">Cordova混合APP打包发布流程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#主要步骤："><span class="toc-text">主要步骤：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#一、前端人员打包"><span class="toc-text">一、前端人员打包</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Android端打包的两个情形："><span class="toc-text">Android端打包的两个情形：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#线上发布应该使用-platforms-android-app-build-outputs-apk-release-app-release-apk已签名安装包。"><span class="toc-text">线上发布应该使用/platforms/android/app/build/outputs/apk/release/app-release.apk已签名安装包。</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、上传https的服务器"><span class="toc-text">二、上传https的服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-Android打包"><span class="toc-text">2.1  Android打包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-Ios-上传包"><span class="toc-text">2.2  Ios 上传包</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三、修改后端配置文件appPackageInfo-json"><span class="toc-text">三、修改后端配置文件appPackageInfo.json</span></a></li></ol></li></ol>
+        </div>
+      </div>
+    
+
+    <div class="post-content">
+      
+        <p>记录Cordova框架开发混合APP打包及发布的流程<br><a id="more"></a></p>
+<h3 id="Cordova混合APP打包发布流程"><a href="#Cordova混合APP打包发布流程" class="headerlink" title="Cordova混合APP打包发布流程"></a>Cordova混合APP打包发布流程</h3><h4 id="主要步骤："><a href="#主要步骤：" class="headerlink" title="主要步骤："></a>主要步骤：</h4><p><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577347125_39.png" alt="图片描述"></p>
+<h4 id="一、前端人员打包"><a href="#一、前端人员打包" class="headerlink" title="一、前端人员打包"></a>一、前端人员打包</h4><p>1.1 先修改生产环境的地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd config/prod.env.js </div><div class="line"># 修改新版正式环境地址</div><div class="line">BASE_API: &apos;&quot;http://180.101.204.92:8001/api/rest/post/&quot;&apos;,</div></pre></td></tr></table></figure></p>
+<ul>
+<li>Android 打包</li>
+<li>Ios 打包</li>
+</ul>
+<p>APP前端使用框架：Cordova、Vue、vue-router、vux<br>Cordova提供将前端代码打包为apk、ipa文件功能。<br>Vue、vue-router为前端使用的框架。<br>vux为前端组件库，提供了前端常用的组件。<br>业务代码部分使用前端代码编写，与系统交互的部分由Cordova各个插件完成。项目中使用到的Cordova的插件有：<br>cordova-plugin-camera：读取相册或者调用本地摄像头拍照。<br>phonegap-plugin-barcodescanner：调用手机摄像头扫描二维码。<br>cordova-plugin-cache-clear：清除缓存。<br>cordova-plugin-app-version：读取APP版本号。<br>cordova-plugin-file-transfer：下载apk文件到本地。<br>cordova-plugin-file-opener2：apk文件下载到本地后，打开apk文件并安装。<br>cordova-plugin-getuisdk：个推官方Cordova插件，实现消息推送。<br>cordova-plugin-statusbar：仅iOS端使用，定义状态栏样式，解决部分iOS系统状态栏覆盖APP页面问题。</p>
+<p>config.xml文件为Cordova配置文件，里面包含了APP的基本信息，如：APP名称、版本号、包名、桌面图标icon等。<br><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577244287_2.png" alt="图片描述"></p>
+<p>package.json文件为项目的配置文件，里面包含了项目的依赖、打包指令、Cordova插件等信息。<br>如果项目中还没有node_modules依赖文件夹，说明项目还没有安装依赖。需要执行指令 npm install 先安装依赖，安装完成后项目根目录会自动生成 node-modules 依赖文件夹，里面包含了项目中使用到的依赖。</p>
+<p> <strong>1.2 Android端打包：</strong> </p>
+<h5 id="Android端打包的两个情形："><a href="#Android端打包的两个情形：" class="headerlink" title="Android端打包的两个情形："></a>Android端打包的两个情形：</h5><p>两个不同的情形对应package.json配置文件里面两个不同的指令，根据不同的情形使用对应的指令。<br>1、正式发布release打包（<code>npm run build-android-release:app</code>）：<br>使用vhjmlw.keystore秘钥库签名<br>秘钥库路径：/res/vhjmlw.keystore<br>秘钥库密码：9294255041<br>秘钥库秘钥别名：vhjmlw_UIOT<br>秘钥库秘钥密码：lei9294255041<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">"build-android-release:app"</span>: <span class="string">"export APP_ENV=mobile&amp;&amp;node --max_old_space_size=8000 build/build.js&amp;&amp;cordova build android --release -- --keystore=res/vhjmlw.keystore --storePassword=9294255041 --alias=vhjmlw_UIOT --password=lei9294255041"</span></div></pre></td></tr></table></figure></p>
+<p>2、测试debug打包（<code>npm run build-android-debug:app</code>）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">"build-android-debug:app"</span>: <span class="string">"export APP_ENV=mobile&amp;&amp;node --max_old_space_size=8000 build/build.js&amp;&amp;cordova build android"</span></div></pre></td></tr></table></figure></p>
+<p>正式发布打包后apk安装包路径：<br>未签名安装包：<code>/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk</code><br>已签名安装包：<code>/platforms/android/app/build/outputs/apk/release/app-release.apk</code></p>
+<p>测试debug打包后apk安装包路径：<br>debug签名安装包：<code>/platforms/android/app/build/outputs/apk/debug/app-debug.apk</code></p>
+<p>debug签名的安装包不应该放在线上生产环境，只适合测试用，debug签名的安装包不能上传应用市场，且不同电脑上的debug.keystore秘钥库可能不同，不同电脑上打出来的debug安装包签名可能不同，后期APP更新时签名不同会造成新版本APP无法安装，这样的话可能会造成APP无法更新。 </p>
+<p>/res/vhjmlw.keystore为公共秘钥库，每次打包时使用此秘钥库打出来的apk安装包签名都一致。</p>
+<h5 id="线上发布应该使用-platforms-android-app-build-outputs-apk-release-app-release-apk已签名安装包。"><a href="#线上发布应该使用-platforms-android-app-build-outputs-apk-release-app-release-apk已签名安装包。" class="headerlink" title="线上发布应该使用/platforms/android/app/build/outputs/apk/release/app-release.apk已签名安装包。"></a>线上发布应该使用<code>/platforms/android/app/build/outputs/apk/release/app-release.apk</code>已签名安装包。</h5><p>也可以手动的对<code>/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk</code>未签名的安装包进行签名，手动签名指令为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">jarsigner -verbose -keystore vhjmlw.keystore秘钥库的路径 -signedjar signed.apk app-release-unsigned.apk vhjmlw_UIOT</div><div class="line">signed.apk为签完名后的安装包</div><div class="line">app-release-unsigned.apk为未签名的安装包</div></pre></td></tr></table></figure></p>
+<p>后面需要将apk安装包文件提供给后端开发人员，放在服务器上面，后端开发人员协同更改APP版本信息。后期更新APP都从服务器下载。<br>另外，PC端下载页面Android和iOS二维码内容分别为其下载链接字符串：<br>Android：<a href="https://www.unicde.com/U-IoT-APP/U-IoT.apk" target="_blank" rel="external">https://www.unicde.com/U-IoT-APP/U-IoT.apk</a><br>iOS：itms-services://?action=download-manifest&amp;url=<a href="https://www.unicde.com/U-IoT-APP/U-IoT.plist" target="_blank" rel="external">https://www.unicde.com/U-IoT-APP/U-IoT.plist</a><br>打包后的apk、ipa文件都在服务器180.101.204.140的/home/web/apache-tomcat-8.5.38_8400/webapps/U-IoT-APP目录里面。</p>
+<p>（罗总提了一个新需求：将apk安装包放在<a href="https://www.unicde.com官网服务器里面，通过https://www.unicde.com/U-IoT-APP/U-IoT.apk" target="_blank" rel="external">https://www.unicde.com官网服务器里面，通过https://www.unicde.com/U-IoT-APP/U-IoT.apk</a> 链接来更新安装包。由于使用的Cordova插件cordova-plugin-file-transfer暂未支持https协议，这个新需求暂时不好实现，目前apk安装包还是放在后台服务部署的服务器里面。）</p>
+<p> <strong>1.3 iOS端打包：</strong><br>iOS端打包需要借助xcode工具，并且配置p12证书和描述文件。<br><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577245293_39.png" alt="图片描述"></p>
+<p>执行npm run build-ios:app指令。</p>
+<p><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432131_82.png" alt="图片描述"></p>
+<p>打包后，如果没有报错，控制台会提示信息：<br><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577242957_12.png" alt="图片描述"><br>现在只是将前端代码打包为iOS端代码，进入/platforms/ios文件夹，双击U-IoT.xcworkspace文件，会自动调用xcode软件开启项目。<br>配置好p12证书和描述文件后，点击xcode的Product-Archive按钮，进行ipa文件的打包。</p>
+<p><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577245562_22.png" alt="图片描述"><br><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577245336_24.png" alt="图片描述"></p>
+<p>期间系统会弹窗提示让输入电脑登录密码：<br><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432380_15.png" alt="图片描述"></p>
+<p>输入电脑登录密码后，如果打包成功，会弹窗新的窗口，点击Distribute APP按钮进行下一步：<br><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432536_55.png" alt="图片描述"></p>
+<p>在新弹出的窗口中选择第二项 Ad Hoc：<br><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432628_69.png" alt="图片描述"></p>
+<p><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432800_56.png" alt="图片描述"></p>
+<p><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432888_58.png" alt="图片描述"></p>
+<p>再次弹窗提示用户输入电脑登录密码：<br><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432923_66.png" alt="图片描述"></p>
+<p>输入电脑登录密码后，打包到最后弹窗提示用户打包成功，点击Export按钮选择安装包导出路径，导出ipa安装包：<br><img src="https://www.tapd.cn/tfl/captures/2019-12/tapd_69841032_base64_1577432996_68.png" alt="图片描述"></p>
+<p>打完包后将ipa文件上传180.101.204.140服务器/home/web/apache-tomcat-8.5.38_8400/webapps/U-IoT-APP目录。<br>iOS下载链接为：itms-services://?action=download-manifest&amp;url=<a href="https://www.unicde.com/U-IoT-APP/U-IoT.plist" target="_blank" rel="external">https://www.unicde.com/U-IoT-APP/U-IoT.plist</a><br>需要iPhone手机使用自带的Safari打开链接安装。</p>
+<h4 id="二、上传https的服务器"><a href="#二、上传https的服务器" class="headerlink" title="二、上传https的服务器"></a>二、上传https的服务器</h4><h5 id="2-1-Android打包"><a href="#2-1-Android打包" class="headerlink" title="2.1  Android打包"></a>2.1  Android打包</h5><pre><code>Android打包好的.apk文件放到**服务器**（180.101.204.140）home/web/apache-tomcat-8.5.38_8400/webapps/U-IoT-APP目录
+</code></pre><p> <strong><em>tips</em></strong> </p>
+<ul>
+<li>服务器：必须是https有认证的服务器</li>
+<li>创建U-IoT</li>
+</ul>
+<p>新项目目录：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># 1.进入webapps目录</div><div class="line">cd /home/web/apache-tomcat-8.5.38_8400/webapps</div><div class="line"># 2.创建U-IoT-APP新项目名称</div><div class="line">mkdir U-IoT-APP</div><div class="line"># 3.apk文件放至新创建目录里</div><div class="line"># 4.记录.apk地址</div><div class="line">pwd</div></pre></td></tr></table></figure></p>
+<h5 id="2-2-Ios-上传包"><a href="#2-2-Ios-上传包" class="headerlink" title="2.2  Ios 上传包"></a>2.2  Ios 上传包</h5><pre><code>Ios打包好是.ipa文件放到**服务器**（180.101.204.140）home/web/apache-tomcat-8.5.38_8400/webapps/U-IoT-APP目录
+</code></pre><p> <strong><em>tips</em></strong> </p>
+<ul>
+<li>服务器：必须是https有认证的服务器</li>
+<li>这里注意ios需要两个文件<code>.plist</code>,<code>.ipa</code>。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</div><div class="line">&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;</div><div class="line">&lt;plist version=&quot;1.0&quot;&gt;</div><div class="line">&lt;dict&gt;</div><div class="line">    &lt;key&gt;items&lt;/key&gt;</div><div class="line">    &lt;array&gt;</div><div class="line">        &lt;dict&gt;</div><div class="line">            &lt;key&gt;assets&lt;/key&gt;</div><div class="line">            &lt;array&gt;</div><div class="line">                &lt;dict&gt;</div><div class="line">                    &lt;key&gt;kind&lt;/key&gt;</div><div class="line">                    &lt;string&gt;software-package&lt;/string&gt;</div><div class="line">                    &lt;key&gt;url&lt;/key&gt;</div><div class="line">                     &lt;!-- 修改包名地址 --&gt;</div><div class="line">                     &lt;string&gt;https://www.unicde.com/U-IoT-APP/U-IoT.ipa&lt;/string&gt; </div><div class="line">                &lt;/dict&gt;</div><div class="line">            &lt;/array&gt;</div><div class="line">            &lt;key&gt;metadata&lt;/key&gt;</div><div class="line">            &lt;dict&gt;</div><div class="line">                  &lt;key&gt;bundle-identifier&lt;/key&gt;</div><div class="line">                  &lt;!-- 包id --&gt;</div><div class="line">                  &lt;string&gt;com.unicde.app&lt;/string&gt;</div><div class="line">                  &lt;key&gt;bundle-version&lt;/key&gt;</div><div class="line">                  &lt;!-- 版本号 --&gt;</div><div class="line">                  &lt;string&gt;1.0.0&lt;/string&gt;</div><div class="line">                  &lt;key&gt;kind&lt;/key&gt;</div><div class="line">                  &lt;string&gt;software&lt;/string&gt;</div><div class="line">                  &lt;key&gt;title&lt;/key&gt;</div><div class="line">                  &lt;!-- app名字 --&gt;</div><div class="line">                  &lt;string&gt;U-iot&lt;/string&gt;</div><div class="line">            &lt;/dict&gt;</div><div class="line">        &lt;/dict&gt;</div><div class="line">    &lt;/array&gt;</div><div class="line">&lt;/dict&gt;</div><div class="line">&lt;/plist&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>创建新项目目录：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># 1.进入webapps目录</div><div class="line">cd /home/web/apache-tomcat-8.5.38_8400/webapps</div><div class="line"># 2.创建建项目名称</div><div class="line">mkdir U-IoT-APP</div><div class="line"># 3.ipa文件和.plist放至新创建目录里</div><div class="line"># 4.记录.plist地址</div><div class="line">pwd</div></pre></td></tr></table></figure>
+<h4 id="三、修改后端配置文件appPackageInfo-json"><a href="#三、修改后端配置文件appPackageInfo-json" class="headerlink" title="三、修改后端配置文件appPackageInfo.json"></a>三、修改后端配置文件<code>appPackageInfo.json</code></h4><p>分别修改配置文件里面的iOS、Android：versionCode 和 path</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">cd  /application/app/conf/appPackageInfo.json</div><div class="line"></div><div class="line">修改配置文件，写上刚刚放入包的路径</div><div class="line">&#123;</div><div class="line">	&quot;ios&quot;: &#123;</div><div class="line">		&quot;complete&quot;:&#123;</div><div class="line">			&quot;versionCode&quot;:&quot;1.0.1&quot;, // 修改版本号</div><div class="line">			&quot;path&quot;:&quot;itms-services://?action=download-manifest&amp;amp;url=https://www.unicde.com/U-IoT-APP/U-IoT.plist </div><div class="line">&quot; // ios路径</div><div class="line">		&#125;,</div><div class="line">		&quot;incremental&quot;:&#123;</div><div class="line">			&quot;versionCode&quot;:&quot;1.0.1&quot;, </div><div class="line">			&quot;path&quot;:&quot;appPackage/ios_incremental_app.wgt&quot; </div><div class="line">		&#125;</div><div class="line">	&#125;,</div><div class="line">	&quot;android&quot;:&#123;</div><div class="line">		&quot;complete&quot;:&#123;</div><div class="line">			&quot;versionCode&quot;:&quot;1.0.1&quot;,// 修改版本号</div><div class="line">			&quot;path&quot;:&quot;https://www.unicde.com/U-IoT-APP/U-IoT.apk&quot; // Android包路径</div><div class="line">		&#125;,</div><div class="line">		&quot;incremental&quot;:&#123;</div><div class="line">			&quot;versionCode&quot;:&quot;1.0.1&quot;,</div><div class="line">			&quot;path&quot;:&quot;appPackage/android_incremental_app.wgt&quot;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+        </div>  
+      </main>
+
+      <footer id="footer" class="footer">
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:lei1028362931@gmail.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+        
+          <a href="http://stackoverflow.com/users/7356556/张建磊" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+        
+      
+    
+      
+        
+          <a href="http://stackoverflow.com/users/7356556/张建磊" class="iconfont icon-twitter" title="twitter"></a>
+        
+      
+    
+      
+        
+          <a href="https://www.facebook.com/profile.php?id=100005888440355" class="iconfont icon-facebook" title="facebook"></a>
+        
+      
+    
+      
+        
+          <a href="https://github.com/vhjmlw" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+        
+          <a href="http://www.jianlei.me" class="iconfont icon-weibo" title="weibo"></a>
+        
+      
+    
+      
+        
+          <a href="https://www.zhihu.com/people/zhang-jian-lei-7" class="iconfont icon-zhihu" title="zhihu"></a>
+        
+      
+    
+    
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2016 - 
+    
+    2020
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">建磊</span>
+  </span>
+</div>
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+
+
+    
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.1.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.1.0"></script>
+
+  </body>
+</html>
